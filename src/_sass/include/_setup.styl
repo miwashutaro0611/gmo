@@ -1,0 +1,155 @@
+
+/*使用フォント追加 */
+@font-face {
+	font-family: "zou";
+	src:url("../fonts/002zou-Regular.otf") format('woff'),
+	url("../fonts/002zou-Regular.otf") format('truetype');
+}
+
+body {
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+/***********************
+使う予定なし(float:clearfix系)
+**********************
+
+/* clearfix　回りこみ解除
+
+.cfx:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 左寄せ
+
+.flL {
+  float: left;
+}
+
+/* 右寄せ
+
+.flR {
+  float: right;
+}
+***********************
+flexで代用するから
+(flexがわかんなくなったら使うかも)
+**********************/
+
+/*
+横並び(1→5)
+float:leftと多分同様
+*/
+.flex-row{
+	flex: row;
+}
+
+/*縦並び(1→5)*/
+.flex-column{
+	flex: column;
+}
+
+/*
+横並び(5→1)
+float:rightと多分同様
+*/
+.flex-row-reverse{
+	flex: row-reverse;
+}
+
+/*縦並び(5→1)*/
+.flex-column-reverse{
+	flex: column-reverse;
+}
+
+/* 文字左寄せ */
+
+.txL {
+  text-align: left;
+}
+
+/* 文字中央寄せ */
+
+.txC {
+  text-align: center;
+}
+
+/* 文字右寄せ */
+
+.txR {
+  text-align: right;
+}
+
+/*空白*/
+
+.tab1 {
+  padding-left: 20px;
+}
+
+.tab2 {
+  padding-left: 40px;
+}
+
+.tab3 {
+  padding-left: 60px;
+}
+
+/*liを横に並べる*/
+
+ol.cfx li,ul.cfx li {
+  float: left;
+}
+
+/*olの効果消去*/
+ol{
+  list-style: none;
+}
+
+/*フッター部分のtextareaのcss初期効果　削除*/
+textarea.opinion-form {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/*pcの時に画像表示(spの時には非表示)*/
+.pc-display{
+  display: block;
+}
+.sp-display,.sp-indisplay{
+  display: none;
+}
+@media (min-width: 767px) {
+  /*パソコンの時に文字改行*/
+  .pc-block{
+    display: block;
+  }
+  .pc-inblock{
+    display: inline;
+  }
+
+}
+@media (max-width: 767px) {
+  /* スマホの時に文字改行 */
+  .sp-block{
+    display: block;
+  }
+  /*spの時に画像表示(pcの時には非表示)*/
+  .pc-display,.pc-indisplay{
+    display: none;
+  }
+  .sp-display{
+    display: block;
+  }
+  .sp-indisplay{
+    display: inline-block;
+  }
+}

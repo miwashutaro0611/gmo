@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*使用フォント追加 */
+@font-face {
+  font-family: "Curls";
+  src: url("../fonts/MARTFUTOMARUSHADOW.TTF") format('woff'), url("../fonts/MARTFUTOMARUSHADOW.TTF") format('truetype');
+}
+body {
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+/* clearfix　回りこみ解除 */
+.cfx:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 左寄せ */
+.flL {
+  float: left;
+}
+/* 右寄せ */
+.flR {
+  float: right;
+}
+/* 文字左寄せ */
+.txL {
+  text-align: left;
+}
+/* 文字中央寄せ */
+.txC {
+  text-align: center;
+}
+/* 文字右寄せ */
+.txR {
+  text-align: right;
+}
+/*空白*/
+.tab1 {
+  padding-left: 20px;
+}
+.tab2 {
+  padding-left: 40px;
+}
+.tab3 {
+  padding-left: 60px;
+}
+/*liを横に並べる*/
+ol.cfx li,
+ul.cfx li {
+  float: left;
+}
+/*olの効果消去*/
+ol {
+  list-style: none;
+}
+/*フッター部分のtextareaのcss初期効果　削除*/
+textarea.opinion-form {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*aのホバー*/
+a:hover {
+  opacity: 0.8;
+}
+/*pcの時に画像表示(spの時には非表示)*/
+.pc-display {
+  display: block;
+}
+.sp-display,
+.sp-indisplay {
+  display: none;
+}
+@media (min-width: 767px) {
+  .pc-block {
+    display: block;
+  }
+  .pc-inblock {
+    display: inline;
+  }
+}
+@media (max-width: 767px) {
+  .sp-block {
+    display: block;
+  }
+  .pc-display,
+  .pc-indisplay {
+    display: none;
+  }
+  .sp-display {
+    display: block;
+  }
+  .sp-indisplay {
+    display: inline-block;
+  }
+  .sp-cfx:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

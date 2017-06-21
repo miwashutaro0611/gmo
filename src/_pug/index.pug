@@ -1,0 +1,34 @@
+extends include/_layout.pug
+block content
+  //- include include/_header.pug //-header読み込み
+  header
+    .inner-wrap
+      h1
+        img(src="../img/index/logo.png" alt="Conoha診断室　ロゴ")
+    .white-bar
+    .circle
+      a(href='#')
+        | 今すぐ
+        br
+        | 診断スタート
+  section#description
+    h2.txC
+      | CONOHA SINDAN ROOM
+      br
+      | FROM GMO INSETNET
+    p.txC
+      | このは診断室へようこそ！
+      br
+      | このページは私美雪このはがサーバーの事で
+      br
+      | 困っているあなたを診断するお部屋です！
+      br
+      | 初心者の方も気軽にどうぞ♪
+  section#diagnosis
+    .diagnosis_wrap1
+    p.start
+      a(href='#')
+        span.large START
+        br
+        | 診断を始める
+    .diagnosis_wrap2
