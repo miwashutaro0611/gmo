@@ -1,16 +1,17 @@
 extends include/_layout.pug
 block content
   //- include include/_header.pug //-header読み込み
-  header
-    .inner-wrap
-      h1
-        img(src="../img/index/logo.png" alt="Conoha診断室　ロゴ")
-    .white-bar
-    .circle
-      a(href='#')
-        | 今すぐ
-        br
-        | 診断スタート
+  section.header_wrapp
+    header.header
+      img.header__image(src="../img/index/firstview-top2.png" alt="トップイメージ")
+    .diagnosis_start
+      .circle
+        .circle__word
+          | 今すぐ診断
+          br
+          | スタート！
+        .circle__image
+          img.circle__image--content(src="../img/index/conoha_01.png" alt="このは1")
   section#description
     h2.txC
       | CONOHA SINDAN ROOM
@@ -19,7 +20,7 @@ block content
     p.txC
       | このは診断室へようこそ！
       br
-      | このページは私美雪このはがサーバーの事で
+      | このページは私美雲このはがサーバーの事で
       br
       | 困っているあなたを診断するお部屋です！
       br
