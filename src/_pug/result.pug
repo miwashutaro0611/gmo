@@ -1,8 +1,8 @@
 extends include/_layout.pug
-
-block title
-  title agoooooooo02
-
+block vars
+  include ./include/_meta.pug
+  - var key = "result"
+  - var page = pages[key]
 block content
   include include/_header
   section

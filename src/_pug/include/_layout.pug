@@ -1,11 +1,10 @@
 //- テンプレート
 //- 必要なら extends include/_layout で読み込み
 doctype html
-html
+block vars
+html(lang="ja")
   head
-    block title
-      title ページのタイトルを入れる
-    include _meta
+    include _head
     include _css
     //- include _script
   body
