@@ -1,0 +1,123 @@
+/* ----------------------------------------
+fileName : style.scss
+writer   : Daichi Seki, Miwa Shuntaro
+---------------------------------------- */
+@import "include/_import.styl";
+
+body
+  font-size 14px
+
+/*****-----------------------------------*****/
+.header_wrapp
+  position relative
+  .header
+    position relative
+    overflow hidden
+    width 100%
+    height auto
+    &::before
+      content ""
+      position absolute
+      z-index 99
+      bottom 0
+      width 200%
+      height 200px
+      background-color #fff
+      transform: skewY(-6deg)
+    &__image
+      width 100%
+      height auto
+  .diagnosis_start
+    position absolute
+    z-index 100
+    bottom 0
+    left 10%
+    width calc(100vmin - 700px)
+    min-width 300px
+    height calc(100vmin - 700px)
+    min-height 300px
+    .circle
+      display table
+      width 100%
+      height 100%
+      padding 0 0 0 20px
+      border 8px solid #fff
+      box-sizing border-box
+      border-radius 50%
+      background-color main_color
+      &__word
+        display table-cell
+        vertical-align middle
+        line-height 2
+        font-size 2.6em
+        font-weight bold
+        color #fff
+      &__image
+        position absolute
+        bottom 2%
+        left 54%
+        width 60%
+        &--content
+          width 100%
+          height auto
+/*****-----------------------------------*****/
+#description
+  margin 50px 0 0
+  h2
+    padding 0 0 100px
+    font-size 3.4em
+    color #FFA200
+    line-height 1.6
+    letter-spacing 0.2em
+  p
+    padding 0 0 100px
+    font-size 2.2em
+    line-height 1.7
+    letter-spacing 0.2em
+
+/*****-----------------------------------*****/
+#diagnosis
+  background: url(../img/index/konoha.png) no-repeat 90% 75%
+  background-size: auto 65%
+  width:100%
+  height 300px
+  margin 0 auto 150px
+  padding 15% 0 5%
+  position relative
+  overflow hidden
+  .start
+    max-width 1000px
+    width 90%
+    margin 0 auto
+    a
+      display: block
+      width 60%
+      font-size 4em
+      color #000
+      border 2px solid #000
+      padding 3%
+      text-align center
+      box-sizing border-box
+      span
+        &.large
+          color#FFA200
+          font-size7vw
+
+  .diagnosis_wrap1
+    double_line #fff,0%,#2576c2
+  .diagnosis_wrap2
+    double_line #fff,65%,#2576c2
+
+/*****-----------------------------------*****/
+// 1000~768 1000px固定幅
+@media screen and (max-width: 999px)
+  body
+    width 1000px
+  .header_wrapp
+    .diagnosis_start
+      width 300px
+      height 300px
+// ここからspの場合
+@media screen and (max-width: 767px)
+  body
+    display none

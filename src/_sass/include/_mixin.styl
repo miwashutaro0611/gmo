@@ -5,21 +5,58 @@ writer   : Daichi Seki, Miwa Shuntaro
 -- 各種mixinを格納
 ---------------------------------------- */
 
+/*****----------------------------------- topページ *****/
 white_bar(color1)
-  width:200%;
-  height: 20%;
-  text-align: center;
-  background: color1;
-  transform:rotate(-5deg);
+  width:200%
+  height: 20%
+  text-align: center
+  background: color1
+  transform:rotate(-5deg)
 
 double_line(color1,price,color2)
-  width:220%;
-  height: 10%;
-  margin:10% 0 0 -10%;
-  text-align: center;
-  background: color1;
-  box-shadow:0px 1.2vw 0px 0px color2 inset,0px -1.2vw 0px 0px color2 inset;
-  position: absolute;
+  width:220%
+  height: 10%
+  margin:10% 0 0 -10%
+  text-align: center
+  background: color1
+  box-shadow:0px 1.2vw 0px 0px color2 inset,0px -1.2vw 0px 0px color2 inset
+  position: absolute
   top:price
-  z-index: 100;
-  transform:rotate(3deg);
+  z-index: 100
+  transform:rotate(3deg)
+
+/*****----------------------------------- contentsページ *****/
+
+sankaku(size,back_color)
+  width: 0px
+  height: 0px
+  top:12px
+  background: transparent
+  border-bottom: size solid back_color
+  border-left: size solid transparent
+  border-right: size solid transparent
+  transform:rotate(90deg)
+
+nav_effect(back_color,link_color)
+  position: relative
+  width:15%
+  height:50px
+  padding:15px 0
+  text-align: center
+  font-size:20px
+  background: back_color
+  box-sizing: border-box
+  &:before
+    content:""
+    position: absolute
+    left:-13px
+    //-sankaku呼び出し
+    sankaku:25px,#fff
+  &:after
+    content:""
+    position: absolute
+    z-index: 100
+    right:-37px
+    sankaku:25px,back_color
+  a
+    color:link_color

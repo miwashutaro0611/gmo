@@ -1,8 +1,6 @@
 /* ----------------------------------------
-fileName : _import.scss
+fileName : style.scss
 writer   : Daichi Seki, Miwa Shuntaro
-
--- 各種ファイルの読み込み
 ---------------------------------------- */
 @charset "UTF-8";
 html,
@@ -258,5 +256,156 @@ textarea.opinion-form {
   }
   .sp-indisplay {
     display: inline-block;
+  }
+}
+body {
+  font-size: 14px;
+}
+/*****-----------------------------------*****/
+.header_wrapp {
+  position: relative;
+}
+.header_wrapp .header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.header_wrapp .header::before {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  width: 200%;
+  height: 200px;
+  background-color: #fff;
+  transform: skewY(-6deg);
+}
+.header_wrapp .header__image {
+  width: 100%;
+  height: auto;
+}
+.header_wrapp .diagnosis_start {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 10%;
+  width: calc(100vmin - 700px);
+  min-width: 300px;
+  height: calc(100vmin - 700px);
+  min-height: 300px;
+}
+.header_wrapp .diagnosis_start .circle {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 20px;
+  border: 8px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #ffa200;
+}
+.header_wrapp .diagnosis_start .circle__word {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 2;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #fff;
+}
+.header_wrapp .diagnosis_start .circle__image {
+  position: absolute;
+  bottom: 2%;
+  left: 54%;
+  width: 60%;
+}
+.header_wrapp .diagnosis_start .circle__image--content {
+  width: 100%;
+  height: auto;
+}
+/*****-----------------------------------*****/
+#description {
+  margin: 50px 0 0;
+}
+#description h2 {
+  padding: 0 0 100px;
+  font-size: 3.4em;
+  color: #ffa200;
+  line-height: 1.6;
+  letter-spacing: 0.2em;
+}
+#description p {
+  padding: 0 0 100px;
+  font-size: 2.2em;
+  line-height: 1.7;
+  letter-spacing: 0.2em;
+}
+/*****-----------------------------------*****/
+#diagnosis {
+  background: url("../img/index/konoha.png") no-repeat 90% 75%;
+  background-size: auto 65%;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto 150px;
+  padding: 15% 0 5%;
+  position: relative;
+  overflow: hidden;
+}
+#diagnosis .start {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+#diagnosis .start a {
+  display: block;
+  width: 60%;
+  font-size: 4em;
+  color: #000;
+  border: 2px solid #000;
+  padding: 3%;
+  text-align: center;
+  box-sizing: border-box;
+}
+#diagnosis .start a span.large {
+  color: #ffa200;
+font-size7vw
+}
+#diagnosis .diagnosis_wrap1 {
+  width: 220%;
+  height: 10%;
+  margin: 10% 0 0 -10%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 1.2vw 0px 0px #2576c2 inset, 0px -1.2vw 0px 0px #2576c2 inset;
+  position: absolute;
+  top: 0%;
+  z-index: 100;
+  transform: rotate(3deg);
+}
+#diagnosis .diagnosis_wrap2 {
+  width: 220%;
+  height: 10%;
+  margin: 10% 0 0 -10%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 1.2vw 0px 0px #2576c2 inset, 0px -1.2vw 0px 0px #2576c2 inset;
+  position: absolute;
+  top: 65%;
+  z-index: 100;
+  transform: rotate(3deg);
+}
+/*****-----------------------------------*****/
+@media screen and (max-width: 999px) {
+  body {
+    width: 1000px;
+  }
+  .header_wrapp .diagnosis_start {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    display: none;
   }
 }

@@ -1,8 +1,10 @@
-extends include/_layout.pug
+extends include/_layout
 block vars
-  include ./include/_meta.pug
+  include include/_meta
   - var key = "top"
   - var page = pages[key]
+  block css
+    link(rel="stylesheet", href='../css/index.css')
 block content
   //- include include/_header.pug //-header読み込み
   section.header_wrapp

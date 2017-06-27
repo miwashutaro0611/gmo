@@ -1,8 +1,11 @@
-extends include/_layout.pug
+extends include/_layout
 block vars
-  include ./include/_meta.pug
+  include include/_meta
   - var key = "diagnosis"
   - var page = pages[key]
+block css
+  link(rel="stylesheet", href='../css/style.css')
+  link(rel="stylesheet", href='../css/diagnosis.css')
 block content
   include include/_header
   section

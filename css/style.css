@@ -169,6 +169,17 @@ select {
 body {
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
+.cfx:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.flL {
+  float: left;
+}
+.flR {
+  float: right;
+}
 .flex-row {
   flex: row;
 }
@@ -250,138 +261,105 @@ textarea.opinion-form {
 body {
   font-size: 14px;
 }
-/*****-----------------------------------*****/
-.header_wrapp {
-  position: relative;
-}
-.header_wrapp .header {
-  position: relative;
-  overflow: hidden;
+/*****----------------------------------- header共有部分 *****/
+header {
   width: 100%;
-  height: auto;
+  background: #ffa200;
+  padding: 5px 0;
 }
-.header_wrapp .header::before {
+header h1 a {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.5;
+}
+/*****----------------------------------- nav共有部分 *****/
+nav ul li {
+  margin: 20px 2%;
+  position: relative;
+  width: 15%;
+  height: 50px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 20px;
+  background: #ffa200;
+  box-sizing: border-box;
+}
+nav ul li:before {
   content: "";
   position: absolute;
-  z-index: 99;
-  bottom: 0;
-  width: 200%;
-  height: 200px;
-  background-color: #fff;
-  transform: skewY(-6deg);
+  left: -13px;
+  width: 0px;
+  height: 0px;
+  top: 12px;
+  background: transparent;
+  border-bottom: 25px solid #fff;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: rotate(90deg);
 }
-.header_wrapp .header__image {
-  width: 100%;
-  height: auto;
-}
-.header_wrapp .diagnosis_start {
+nav ul li:after {
+  content: "";
   position: absolute;
   z-index: 100;
-  bottom: 0;
-  left: 10%;
-  width: calc(100vmin - 700px);
-  min-width: 300px;
-  height: calc(100vmin - 700px);
-  min-height: 300px;
+  right: -37px;
+  width: 0px;
+  height: 0px;
+  top: 12px;
+  background: transparent;
+  border-bottom: 25px solid #ffa200;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: rotate(90deg);
 }
-.header_wrapp .diagnosis_start .circle {
-  display: table;
-  width: 100%;
-  height: 100%;
-  padding: 0 0 0 20px;
-  border: 8px solid #fff;
-  box-sizing: border-box;
-  border-radius: 50%;
-  background-color: #ffa200;
-}
-.header_wrapp .diagnosis_start .circle__word {
-  display: table-cell;
-  vertical-align: middle;
-  line-height: 2;
-  font-size: 2.6em;
-  font-weight: bold;
-  color: #fff;
-}
-.header_wrapp .diagnosis_start .circle__image {
-  position: absolute;
-  bottom: 2%;
-  left: 54%;
-  width: 60%;
-}
-.header_wrapp .diagnosis_start .circle__image--content {
-  width: 100%;
-  height: auto;
-}
-/*****-----------------------------------*****/
-#description {
-  margin: 50px 0 0;
-}
-#description h2 {
-  padding: 0 0 100px;
-  font-size: 3.4em;
-  color: #ffa200;
-  line-height: 1.6;
-  letter-spacing: 0.2em;
-}
-#description p {
-  padding: 0 0 100px;
-  font-size: 2.2em;
-  line-height: 1.7;
-  letter-spacing: 0.2em;
-}
-/*****-----------------------------------*****/
-#diagnosis {
-  background: url("../img/index/konoha.png") no-repeat 90% 75%;
-  background-size: auto 65%;
-  width: 100%;
-  height: 300px;
-  margin: 0 auto 150px;
-  padding: 15% 0 5%;
-  position: relative;
-  overflow: hidden;
-}
-#diagnosis .start {
-  max-width: 1000px;
-  width: 90%;
-  margin: 0 auto;
-}
-#diagnosis .start a {
-  display: block;
-  width: 60%;
-  font-size: 4em;
+nav ul li a {
   color: #000;
-  border: 2px solid #000;
-  padding: 3%;
+}
+nav ul li.active {
+  margin: 20px 2% 20px 1%;
+  z-index: 50;
+  transform: scale(1.3);
+  position: relative;
+  width: 15%;
+  height: 50px;
+  padding: 15px 0;
   text-align: center;
+  font-size: 20px;
+  background: #78dbc6;
   box-sizing: border-box;
 }
-#diagnosis .start a span.large {
-  color: #ffa200;
-font-size7vw
-}
-#diagnosis .diagnosis_wrap1 {
-  width: 220%;
-  height: 10%;
-  margin: 10% 0 0 -10%;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0px 1.2vw 0px 0px #2576c2 inset, 0px -1.2vw 0px 0px #2576c2 inset;
+nav ul li.active:before {
+  content: "";
   position: absolute;
-  top: 0%;
-  z-index: 100;
-  transform: rotate(3deg);
+  left: -13px;
+  width: 0px;
+  height: 0px;
+  top: 12px;
+  background: transparent;
+  border-bottom: 25px solid #fff;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: rotate(90deg);
 }
-#diagnosis .diagnosis_wrap2 {
-  width: 220%;
-  height: 10%;
-  margin: 10% 0 0 -10%;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0px 1.2vw 0px 0px #2576c2 inset, 0px -1.2vw 0px 0px #2576c2 inset;
+nav ul li.active:after {
+  content: "";
   position: absolute;
-  top: 65%;
   z-index: 100;
-  transform: rotate(3deg);
+  right: -37px;
+  width: 0px;
+  height: 0px;
+  top: 12px;
+  background: transparent;
+  border-bottom: 25px solid #78dbc6;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: rotate(90deg);
+}
+nav ul li.active a {
+  color: #fff;
 }
 /*****-----------------------------------*****/
 @media screen and (max-width: 999px) {
