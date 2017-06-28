@@ -323,7 +323,7 @@ body {
   width: 100%;
   height: auto;
 }
-/*****-----------------------------------*****/
+/*****----------------------------------- description *****/
 #description {
   margin: 50px 0 0;
 }
@@ -340,7 +340,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.2em;
 }
-/*****-----------------------------------*****/
+/*****----------------------------------- diagnosis *****/
 #diagnosis {
   background: url("../img/index/konoha.png") no-repeat 90% 75%;
   background-size: auto 65%;
