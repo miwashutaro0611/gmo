@@ -269,7 +269,10 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 700px;
+  max-height: 1200px;
+  background: #0f0;
 }
 .header_wrapp .header::before {
   content: "";
@@ -281,9 +284,10 @@ body {
   background-color: #fff;
   transform: skewY(-6deg);
 }
-.header_wrapp .header__image {
-  width: 100%;
-  height: auto;
+.header_wrapp .header h1 {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.5;
 }
 .header_wrapp .diagnosis_start {
   position: absolute;

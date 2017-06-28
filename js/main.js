@@ -4,6 +4,13 @@ writer   : Daichi Seki, Miwa Shuntaro
 ---------------------------------------- */
 
 $(function(){
+/*
+  $("body").height($(document).height());　$(window).scroll(function() {
+  if
+  ($(window).scrollTop() >= ($("body").height() - $(window).height())) {　$(window).scrollTop(1);}
+  else if
+  ($(window).scrollTop() == 0) {　$(window).scrollTop($("body").height() - $(window).height() - 1);}});
+ */
 
   // diagnosis.html
   // headerから各問題へスムーズスクロール
