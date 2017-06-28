@@ -2,15 +2,19 @@
 fileName : main.js
 writer   : Daichi Seki, Miwa Shuntaro
 ---------------------------------------- */
-
+// //トップページheaderの高さ
+// var $header__height = $('.header_wrapp').outerWidth(true);
+// //ウィンドウの高さ
+// var $window__height=window.innerHeight;
+//
+// alert($header__height);
 $(function(){
-/*
-  $("body").height($(document).height());　$(window).scroll(function() {
-  if
-  ($(window).scrollTop() >= ($("body").height() - $(window).height())) {　$(window).scrollTop(1);}
-  else if
-  ($(window).scrollTop() == 0) {　$(window).scrollTop($("body").height() - $(window).height() - 1);}});
- */
+
+  // $("body").height($(document).height() -  + $window__height);　$(window).scroll(function() {
+  // if
+  // ($(window).scrollTop() >= ($("body").height() - $(window).height())) {　$(window).scrollTop(1);}
+  // else if
+  // ($(window).scrollTop() == 0) {　$(window).scrollTop($("body").height() - $(window).height() - 1);}});
 
   // diagnosis.html
   // headerから各問題へスムーズスクロール

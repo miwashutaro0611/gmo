@@ -9,32 +9,38 @@ block content
   //- include include/_header.pug //-header読み込み
   section.header_wrapp
     header.header
-      .header__image
-        h1
-          |あなたにピッタリなVPSサービスを
-          br
-          |このはと一緒に考える「Conoha診断室」
-    a.diagnosis_start(href='diagnosis.html')
-      .circle
-        .circle__word
-          | 今すぐ診断
-          br
-          | スタート！
-        .circle__image
-          img.circle__image--content(src="./img/index/conoha_01.png" alt="このは1")
+      h1
+        | あなたにピッタリなVPSサービスを
+        br
+        | このはと一緒に考える
+        br
+        span 「Conoha診断室」
+      a.diagnosis_start(href='diagnosis.html')
+        .circle
+          .circle__word
+            | 今すぐ診断
+            br
+            | スタート！
+            .circle__image
+              img.circle__image--content(src="./img/index/conoha_01.png" alt="このは1")
+    img.header__image(src="./img/index/conoha_main.png")
   section#description
-    h2.txC
-      | CONOHA SINDAN ROOM
-      br
-      | FROM GMO INSETNET
-    p.txC
-      | Conoha診断室へようこそ！！
-      br
-      | このページは私美雲このはがサーバーの事で
-      br
-      | 困っているあなたを診断するお部屋です！
-      br
-      | 初心者の方も気軽にどうぞ♪
+    .title
+      h2
+        | CONOHA SINDAN ROOM
+        br
+        | FROM GMO INSETNET
+    .text
+      .text__innner.txC
+        h3 タイトル
+        p
+          | Conoha診断室へようこそ！！
+          br
+          | このページは私美雲このはがサーバーの事で
+          br
+          | 困っているあなたを診断するお部屋です！
+          br
+          | 初心者の方も気軽どうぞ♪
   section#diagnosis
     .diagnosis_wrap1
     p.start
@@ -43,3 +49,20 @@ block content
         br
         | 診断を始める
     .diagnosis_wrap2
+  //- section.header_wrapp
+  //-   header.header
+  //-     h1
+  //-       | あなたにピッタリなVPSサービスを
+  //-       br
+  //-       | このはと一緒に考える
+  //-       br
+  //-       span 「Conoha診断室」
+  //-     a.diagnosis_start(href='diagnosis.html')
+  //-       .circle
+  //-         .circle__word
+  //-           | 今すぐ診断
+  //-           br
+  //-           | スタート！
+  //-           .circle__image
+  //-             img.circle__image--content(src="./img/index/conoha_01.png" alt="このは1")
+  //-   img.header__image(src="./img/index/conoha_main.png")

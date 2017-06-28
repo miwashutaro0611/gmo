@@ -15,69 +15,117 @@ body
     overflow hidden
     width 100%
     height 100%
-    min-height 700px
-    max-height 1200px
-    background #0f0
+    background url(../img/index/header_back.jpg) no-repeat center top
+    background-size cover
+    font-family "851kktt"
     &::before
       content ""
       position absolute
       z-index 99
       bottom 0
       width 200%
-      height 200px
+      height 11vw
       background-color #fff
       transform: skewY(-6deg)
     h1
-      font-size 30px
+      padding:5% 8% 3% 8%
+      font-size 3.6vw
       color #fff
-      line-height 1.5
-  .diagnosis_start
-    position absolute
-    z-index 100
-    bottom 0
-    left 10%
-    width calc(100vmin - 700px)
-    min-width 300px
-    height calc(100vmin - 700px)
-    min-height 300px
-    .circle
-      display table
-      width 100%
-      height 100%
-      padding 0 0 0 20px
-      border 8px solid #fff
-      box-sizing border-box
-      border-radius 50%
-      background-color main_color
-      &__word
-        display table-cell
-        vertical-align middle
-        line-height 2
-        font-size 2.6em
-        font-weight bold
-        color #fff
-      &__image
-        position absolute
-        bottom 2%
-        left 54%
-        width 60%
-        &--content
-          width 100%
-          height auto
+      line-height 1.6
+      span
+        font-size 6vw
+    &__image
+      position absolute
+      width:45%
+      top 2%
+      right 1%
+      z-index 100
+    .diagnosis_start
+      position relative
+      display block
+      z-index 100
+      top 55%
+      left 8%
+      width 30vw
+      height 30vw
+      .circle
+        display table
+        width 100%
+        height 100%
+        padding 0 0 0 20px
+        border 8px solid #fff
+        box-sizing border-box
+        border-radius 50%
+        background-color main_color
+        &__word
+          display table-cell
+          vertical-align middle
+          padding 5%
+          box-sizing border-box
+          line-height 2
+          font-size 2.8vw
+          font-weight bold
+          color #fff
+          //影をつける
+          contour #f01fdb
+        &__image
+          position absolute
+          bottom 0%
+          left 60%
+          width 60%
+          &--content
+            width 100%
+            height auto
 /*****----------------------------------- description *****/
 #description
-  margin 50px 0 0
-  h2
-    padding 0 0 100px
-    font-size 3.4em
-    color #FFA200
-    line-height 1.6
-    letter-spacing 0.2em
-  p
-    padding 0 0 100px
-    font-size 2.2em
-    line-height 1.7
-    letter-spacing 0.2em
+  background main_color
+  margin 2% 0
+  .title
+    position relative
+    background #fff
+    overflow hidden
+    width 100%
+    height 25vw
+    padding 0 8%
+    box-sizing border-box
+    &::before
+      content ""
+      position absolute
+      z-index 99
+      left -1%
+      bottom 0%
+      width 200%
+      height 11vw
+      background-color main_color
+      transform: skewY(-6deg)
+    h2
+      padding 0 0 100px
+      font-size 3.4vw
+      font-family toroman
+      color #fff
+      line-height 1.6
+      letter-spacing 0.2em
+      transform: skewY(-6deg)
+      //影をつける
+      contour2 main_color
+  .text
+    width 100%
+    color #fff
+    padding 0 15%
+    background url(../img/index/conoha_2.png) no-repeat left top
+    box-sizing border-box
+    &__innner
+      margin 5% 0 0
+      padding 5%
+      background rgba(#2b302a, 0.6)
+      h3
+        font-size 2.6vw
+        padding 5% 0 0
+      p
+        padding 5% 0
+        font-size 2.2vw
+        line-height 1.8
+        letter-spacing 0.2em
 
 /*****----------------------------------- diagnosis *****/
 #diagnosis
@@ -118,9 +166,19 @@ body
   body
     width 1000px
   .header_wrapp
-    .diagnosis_start
-      width 300px
-      height 300px
+    .header
+      &::before
+        height 120px
+      h1
+        font-size 36px
+        span
+          font-size 60px
+      .diagnosis_start
+        width 300px
+        height 300px
+        .circle
+          &__word
+            font-size 2em
 // ここからspの場合
 @media screen and (max-width: 767px)
   body
