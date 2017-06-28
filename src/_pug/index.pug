@@ -4,20 +4,20 @@ block vars
   - var key = "top"
   - var page = pages[key]
   block css
-    link(rel="stylesheet", href='../css/index.css')
+    link(rel="stylesheet", href='./css/index.css')
 block content
   //- include include/_header.pug //-header読み込み
   section.header_wrapp
     header.header
-      img.header__image(src="../img/index/firstview-top2.png" alt="トップイメージ")
-    .diagnosis_start
+      img.header__image(src="./img/index/firstview-top2.png" alt="トップイメージ")
+    a.diagnosis_start(href='diagnosis.html')
       .circle
         .circle__word
           | 今すぐ診断
           br
           | スタート！
         .circle__image
-          img.circle__image--content(src="../img/index/conoha_01.png" alt="このは1")
+          img.circle__image--content(src="./img/index/conoha_01.png" alt="このは1")
   section#description
     h2.txC
       | CONOHA SINDAN ROOM
