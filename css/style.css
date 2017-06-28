@@ -263,7 +263,9 @@ body {
 }
 /*****----------------------------------- header共有部分 *****/
 .global_header {
+  position: fixed;
   width: 100%;
+  background-color: #fff;
 }
 .global_header__h1 {
   height: 120px;
@@ -298,12 +300,13 @@ body {
   height: 100%;
   margin: 0 35px 0 0;
   background-color: #ffa200;
+  transition: 0.5s;
 }
 .global_header__nav .question_list__item:hover {
   cursor: pointer;
 }
 .global_header__nav .question_list__item.active {
-  flex: 2;
+  flex: 2.5;
   background-color: #4585e6;
 }
 .global_header__nav .question_list__item.active::after {
@@ -332,7 +335,8 @@ body {
   display: block;
   line-height: 70px;
   text-align: right;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: bold;
   color: #fff;
 }
 /*****-----------------------------------*****/

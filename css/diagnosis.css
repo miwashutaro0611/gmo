@@ -2,18 +2,283 @@
 fileName : style.scss
 writer   : Daichi Seki, Miwa Shuntaro
 ---------------------------------------- */
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+@media screen and (min-width: 767px) {
+  a:hover {
+    opacity: 0.8;
+  }
+}
+@font-face {
+  font-family: "zou";
+  src: url("../fonts/002zou-Regular.otf") format('woff'), url("../fonts/002zou-Regular.otf") format('truetype');
+}
+body {
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+.cfx:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.flL {
+  float: left;
+}
+.flR {
+  float: right;
+}
+.flex-row {
+  flex: row;
+}
+.flex-column {
+  flex: column;
+}
+.flex-row-reverse {
+  flex: row-reverse;
+}
+.flex-column-reverse {
+  flex: column-reverse;
+}
+.txL {
+  text-align: left;
+}
+.txC {
+  text-align: center;
+}
+.txR {
+  text-align: right;
+}
+.tab1 {
+  padding-left: 20px;
+}
+.tab2 {
+  padding-left: 40px;
+}
+.tab3 {
+  padding-left: 60px;
+}
+ol.cfx li,
+ul.cfx li {
+  float: left;
+}
+ol {
+  list-style: none;
+}
+textarea.opinion-form {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.pc-display {
+  display: block;
+}
+.sp-display,
+.sp-indisplay {
+  display: none;
+}
+@media (min-width: 767px) {
+  .pc-block {
+    display: block;
+  }
+  .pc-inblock {
+    display: inline;
+  }
+}
+@media (max-width: 767px) {
+  .sp-block {
+    display: block;
+  }
+  .pc-display,
+  .pc-indisplay {
+    display: none;
+  }
+  .sp-display {
+    display: block;
+  }
+  .sp-indisplay {
+    display: inline-block;
+  }
+}
 body {
   font-size: 14px;
 }
 /*****-----------------------------------*****/
+.diagnosis_wrap {
+  width: 100%;
+  height: 100%;
+  padding-top: 210px;
+}
+.diagnosis_wrap__item {
+  height: calc(100vh - 200px);
+  background-color: rgba(255,162,0,0.5);
+}
 /*****-----------------------------------*****/
 @media screen and (max-width: 999px) {
   body {
     width: 1000px;
   }
-  .header_wrapp .diagnosis_start {
-    width: 300px;
-    height: 300px;
+  body .global_header {
+    position: absolute;
+    width: 1000px;
   }
 }
 @media screen and (max-width: 767px) {
