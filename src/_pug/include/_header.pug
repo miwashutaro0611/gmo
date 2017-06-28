@@ -1,19 +1,25 @@
 //- common header
-header
-  h1
-    a(href="#")
+header.global_header
+  h1.global_header__h1
+    a.global_header__h1--link(href="#")
       | CONOHA
       br
       | SINDAN ROOM
-nav
-  ul.cfx
-    li
-      a(href="#") START
-    li.active
-      a(href="#") Q.1
-    li
-      a(href="#") Q.2
-    li
-      a(href="#") Q.3
-    li
-      a(href="#") Q.4
+  nav.global_header__nav
+    ul.question_list
+      li.question_list__item.active
+        span.question_list__item--link Q1
+      li.question_list__item
+        span.question_list__item--link Q2
+      li.question_list__item
+        span.question_list__item--link Q3
+      li.question_list__item
+        span.question_list__item--link Q4
+      li.question_list__item
+        span.question_list__item--link Q5
+      li.question_list__item
+        span.question_list__item--link Q6
+      li.question_list__item
+        span.question_list__item--link Q7
+      li.question_list__item
+        span.question_list__item--link Q8
