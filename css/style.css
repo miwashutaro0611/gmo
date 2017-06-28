@@ -272,7 +272,7 @@ header h1 a {
   margin: 0 auto;
   text-align: center;
   font-size: 25px;
-  color: #000;
+  color: #fff;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -288,7 +288,7 @@ nav ul li {
   background: #ffa200;
   box-sizing: border-box;
 }
-nav ul li:before {
+nav ul libefore {
   content: "";
   position: absolute;
   left: -13px;
@@ -299,9 +299,8 @@ nav ul li:before {
   border-bottom: 25px solid #fff;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  transform: rotate(90deg);
 }
-nav ul li:after {
+nav ul liafter {
   content: "";
   position: absolute;
   z-index: 100;
@@ -313,10 +312,9 @@ nav ul li:after {
   border-bottom: 25px solid #ffa200;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  transform: rotate(90deg);
 }
 nav ul li a {
-  color: #000;
+  color: #fff;
 }
 nav ul li.active {
   margin: 20px 2% 20px 1%;
@@ -331,7 +329,7 @@ nav ul li.active {
   background: #78dbc6;
   box-sizing: border-box;
 }
-nav ul li.active:before {
+nav ul li.activebefore {
   content: "";
   position: absolute;
   left: -13px;
@@ -342,9 +340,8 @@ nav ul li.active:before {
   border-bottom: 25px solid #fff;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  transform: rotate(90deg);
 }
-nav ul li.active:after {
+nav ul li.activeafter {
   content: "";
   position: absolute;
   z-index: 100;
@@ -356,7 +353,6 @@ nav ul li.active:after {
   border-bottom: 25px solid #78dbc6;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  transform: rotate(90deg);
 }
 nav ul li.active a {
   color: #fff;
