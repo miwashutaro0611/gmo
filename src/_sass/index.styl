@@ -79,7 +79,7 @@ body
 /*****----------------------------------- description *****/
 #description
   background main_color
-  margin 2% 0
+  margin 2% 0 0
   .title
     position relative
     background #fff
@@ -109,24 +109,73 @@ body
       //影をつける
       contour2 main_color
   .text
+    position relative
     width 100%
     color #fff
-    padding 0 15%
-    background url(../img/index/conoha_2.png) no-repeat left top
+    padding 0 15% 15%
+    background url(../img/index/conoha_2.png) no-repeat -20% center
+    background-size 45% auto
     box-sizing border-box
+    overflow hidden
     &__innner
       margin 5% 0 0
       padding 5%
       background rgba(#2b302a, 0.6)
       h3
-        font-size 2.6vw
-        padding 5% 0 0
+        font-size 6vw
+        font-family "851kktt"
+        color main_color
+        //影をつける
+        contour2 #fff
       p
         padding 5% 0
         font-size 2.2vw
         line-height 1.8
         letter-spacing 0.2em
+      h4
 
+        font-size 2.6vw
+        background linear-gradient(transparent 50%, main_color 0%);
+        padding 0 0 1%
+/*****----------------------------------- application *****/
+#application
+  position relative
+  overflow hidden
+  width 100vw
+  background url(../img/index/app_back.jpg) no-repeat center center
+  background-size cover
+  &::before
+    content ""
+    position absolute
+    z-index 99
+    left -1%
+    top 0%
+    width 200%
+    height 15vw
+    background-color main_color
+    transform: skewY(6deg)
+  .title
+    position relative
+    background #021969
+    overflow hidden
+    width 100%
+    height 25vw
+    margin 8% 0
+    padding 0 8%
+    box-sizing border-box
+    transform: skewY(6deg)
+    h2
+      padding 10% 0 0
+      font-size 3.4vw
+      font-family toroman
+      color #021969
+      line-height 1.6
+      letter-spacing 0.2em
+      //影をつける
+      contour2 #fff
+  .text
+    position relative
+    background #0f0
 /*****----------------------------------- diagnosis *****/
 #diagnosis
   background: url(../img/index/konoha.png) no-repeat 90% 75%
@@ -162,23 +211,23 @@ body
 
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
-@media screen and (max-width: 999px)
-  body
-    width 1000px
-  .header_wrapp
-    .header
-      &::before
-        height 120px
-      h1
-        font-size 36px
-        span
-          font-size 60px
-      .diagnosis_start
-        width 300px
-        height 300px
-        .circle
-          &__word
-            font-size 2em
+// @media screen and (max-width: 999px)
+//   body
+//     width 1000px
+//   .header_wrapp
+//     .header
+//       &::before
+//         height 120px
+//       h1
+//         font-size 36px
+//         span
+//           font-size 60px
+//       .diagnosis_start
+//         width 300px
+//         height 300px
+//         .circle
+//           &__word
+//             font-size 2em
 // ここからspの場合
 @media screen and (max-width: 767px)
   body

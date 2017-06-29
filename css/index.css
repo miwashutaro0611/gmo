@@ -347,7 +347,7 @@ body {
 /*****----------------------------------- description *****/
 #description {
   background: #ffa200;
-  margin: 2% 0;
+  margin: 2% 0 0;
 }
 #description .title {
   position: relative;
@@ -380,11 +380,14 @@ body {
   text-shadow: #ffa200 0.2vw 0.2vw 0px, #ffa200 -0.2vw 0.2vw 0px, #ffa200 0.2vw -0.2vw 0px, #ffa200 -0.2vw -0.2vw 0px, #ffa200 0vw 0.3vw 0px, #ffa200 -0.3vw 0vw 0px, #ffa200 0.3vw 0vw 0px, #ffa200 0vw -0.3vw 0px;
 }
 #description .text {
+  position: relative;
   width: 100%;
   color: #fff;
-  padding: 0 15%;
-  background: url("../img/index/conoha_2.png") no-repeat left top;
+  padding: 0 15% 15%;
+  background: url("../img/index/conoha_2.png") no-repeat -20% center;
+  background-size: 45% auto;
   box-sizing: border-box;
+  overflow: hidden;
 }
 #description .text__innner {
   margin: 5% 0 0;
@@ -392,14 +395,64 @@ body {
   background: rgba(43,48,42,0.6);
 }
 #description .text__innner h3 {
-  font-size: 2.6vw;
-  padding: 5% 0 0;
+  font-size: 6vw;
+  font-family: "851kktt";
+  color: #ffa200;
+  text-shadow: #fff 0.2vw 0.2vw 0px, #fff -0.2vw 0.2vw 0px, #fff 0.2vw -0.2vw 0px, #fff -0.2vw -0.2vw 0px, #fff 0vw 0.3vw 0px, #fff -0.3vw 0vw 0px, #fff 0.3vw 0vw 0px, #fff 0vw -0.3vw 0px;
 }
 #description .text__innner p {
   padding: 5% 0;
   font-size: 2.2vw;
   line-height: 1.8;
   letter-spacing: 0.2em;
+}
+#description .text__innner h4 {
+  font-size: 2.6vw;
+  background: linear-gradient(transparent 50%, #ffa200 0%);
+  padding: 0 0 1%;
+}
+/*****----------------------------------- application *****/
+#application {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  background: url("../img/index/app_back.jpg") no-repeat center center;
+  background-size: cover;
+}
+#application::before {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  left: -1%;
+  top: 0%;
+  width: 200%;
+  height: 15vw;
+  background-color: #ffa200;
+  transform: skewY(6deg);
+}
+#application .title {
+  position: relative;
+  background: #021969;
+  overflow: hidden;
+  width: 100%;
+  height: 25vw;
+  margin: 8% 0;
+  padding: 0 8%;
+  box-sizing: border-box;
+  transform: skewY(6deg);
+}
+#application .title h2 {
+  padding: 10% 0 0;
+  font-size: 3.4vw;
+  font-family: toroman;
+  color: #021969;
+  line-height: 1.6;
+  letter-spacing: 0.2em;
+  text-shadow: #fff 0.2vw 0.2vw 0px, #fff -0.2vw 0.2vw 0px, #fff 0.2vw -0.2vw 0px, #fff -0.2vw -0.2vw 0px, #fff 0vw 0.3vw 0px, #fff -0.3vw 0vw 0px, #fff 0.3vw 0vw 0px, #fff 0vw -0.3vw 0px;
+}
+#application .text {
+  position: relative;
+  background: #0f0;
 }
 /*****----------------------------------- diagnosis *****/
 #diagnosis {
@@ -456,27 +509,6 @@ body {
   transform: rotate(3deg);
 }
 /*****-----------------------------------*****/
-@media screen and (max-width: 999px) {
-  body {
-    width: 1000px;
-  }
-  .header_wrapp .header::before {
-    height: 120px;
-  }
-  .header_wrapp .header h1 {
-    font-size: 36px;
-  }
-  .header_wrapp .header h1 span {
-    font-size: 60px;
-  }
-  .header_wrapp .header .diagnosis_start {
-    width: 300px;
-    height: 300px;
-  }
-  .header_wrapp .header .diagnosis_start .circle__word {
-    font-size: 2em;
-  }
-}
 @media screen and (max-width: 767px) {
   body {
     display: none;
