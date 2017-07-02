@@ -5,6 +5,9 @@ block vars
   - var page = pages[key]
 block css
   link(rel="stylesheet", href='./css/index.css')
+block js
+  script(src="./js/plugin/jInvertScroll.js")
+  script(src="./js/index.js")
 block content
   //- include include/_header.pug //-header読み込み
   section.header_wrapp
@@ -110,7 +113,7 @@ block content
         br
         | 定額制・データ送信無制限
         br
-        | なのでコストも明確のが
+        | なのでコストも明確なのが
         br
         | Conohaの魅力です♪
       p.comment__hukidashi4.first
@@ -136,19 +139,140 @@ block content
         br
         | FOR APPLICATION
     .text
-      .text__inner
-        h3.txC Conohaサーバ機能一覧
-        p あああああああああああああああああ
-        h4 サーバ
-        ul
-          li コンテンツ1
-          li コンテンツ2
+      .text__inner.txC
+        h3 Conohaサーバ機能一覧
+        p
+          | 初心者からプロフェッショナルの方まで
+          br
+          | 誰でも満足いただけるのは機能が豊富だから♪
+          br
+          | どんな機能があるのかぜひご覧ください。
+        h4.txC サーバ
+        ul.cfx
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+        h4.txC ネットワーク
+        ul.cfx
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+        h4.txC テンプレート
+        ul.cfx
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+        h4.txC セキュリティー
+        ul.cfx
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+        h4.txC サーバ操作
+        ul.cfx
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+        h4.txC サポート
+        ul.cfx
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+          li
+            p.list_img
+              img(src="./img/index/app/serv_icon01.png" alt="")
+            p.list_text 全てSSD
+        h4.txC 機能をもっと詳しく見る
+        p.link
+          a(href='http://www.conoha.jp/function/' target="_blank") 機能一覧ページへ
   section#constitution
     .title
       h2
         | CONOHA SINDAN ROOM
         br
-        | FROM GMO INSETNET
+        | CONSTITUTION EXAMPLE
+    .text
+      .text__inner
+        .scroll.wid3000 あ
+        .scroll.wid4000 い
+        .scroll.wid7000 う
   section#diagnosis
     .diagnosis_wrap1
     p.start

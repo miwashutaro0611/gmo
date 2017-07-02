@@ -143,14 +143,14 @@ body
         color #fff
         letter-spacing 0.1em
         //影をつける
-        contour2 main_color
+        contour main_color
       ul
         li
           width 85%
           background url(../img/index/check_icon.png) no-repeat left center
           background-size 8%
           margin 0 auto -3%
-          padding 3% 0 5% 10%
+          padding 4% 0 4% 10%
           box-sizing border-box
           font-size 2.6vw
           .marker
@@ -257,9 +257,33 @@ body
         line-height 1.8
         letter-spacing 0.2em
       h4
-        font-size 2.6vw
-        background linear-gradient(transparent 50%, #021969 0%);
-        padding 0 0 1%
+        font-size 4vw
+        padding 3% 0
+        color #fff
+        letter-spacing 0.1em
+        //影をつける
+        contour #021969
+      ul
+        padding 3% 0 2%
+        li
+          width 22%
+          margin 0 4% 4% 0
+          .list_img
+            img
+              width 80%
+              text-align center
+          .list_text
+
+          &:nth-child(4n)
+            margin 0 0 4% 0
+      .link
+        a
+          link_btn:#fff,#021969
+          background-image url(../img/index/external.png)
+          background-repeat no-repeat
+          background-position 96% center
+          background-size 10% auto
+
 /*****----------------------------------- constitution *****/
 #constitution
   .title
@@ -281,6 +305,24 @@ body
       letter-spacing 0.2em
       //影をつける
       contour2 #fff
+  .text
+    position relative
+    width 100%
+    overflow-x hidden
+    &__inner
+      .scroll
+        position absolute
+        left 0
+        bottom 0
+        &.wid3000
+          z-index 1
+          width 3000px
+        &.wid4000
+          z-index 500
+          width:4000px
+        &.wid7000
+          z-index 1000
+          width 7000px
 /*****----------------------------------- diagnosis *****/
 #diagnosis
   background: url(../img/index/konoha.png) no-repeat 90% 75%
