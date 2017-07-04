@@ -333,12 +333,23 @@ body {
   border-top: 35px solid #ffa200;
 }
 .global_header__nav .question_list__item--link {
+  position: relative;
   display: block;
   line-height: 70px;
   text-align: right;
   font-size: 1.4em;
   font-weight: bold;
   color: #fff;
+}
+.global_header__nav .question_list__item--link:hover {
+  opacity: 1;
+}
+.global_header__nav .question_list__item--link .image {
+  position: absolute;
+  top: -10px;
+  left: 15%;
+  width: 100px;
+  transform: rotateY(180deg);
 }
 /*****-----------------------------------*****/
 @media screen and (max-width: 999px) {
