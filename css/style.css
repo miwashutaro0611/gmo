@@ -304,7 +304,7 @@ body {
   height: 100%;
   margin: 0 35px 0 0;
   background-color: #ffa200;
-  transition: 0.5s;
+  transition: 1s;
 }
 .global_header__nav .question_list__item:hover {
   cursor: pointer;
@@ -326,6 +326,7 @@ body {
   margin: auto;
   border: 35px solid transparent;
   transform: rotate(-90deg);
+  transition: 1s;
 }
 .global_header__nav .question_list__item::before {
   border-top: 35px solid #fff;

@@ -42,7 +42,7 @@ body
         height 100%
         margin 0 35px 0 0
         background-color main_color
-        transition .5s
+        transition 1s
         &:hover
           cursor pointer
         &.active
@@ -50,6 +50,8 @@ body
           background-color #4585e6
           &::after
             border-top 35px solid #4585e6
+
+        // 三角形
         &::before,&::after
           content ""
           position absolute
@@ -59,6 +61,7 @@ body
           margin auto
           border 35px solid transparent
           transform rotate(-90deg)
+          transition 1s
         &::before
           border-top 35px solid #fff
           cursor default

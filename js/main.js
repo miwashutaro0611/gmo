@@ -24,7 +24,7 @@ $(function(){
     $(this).parent().addClass('active');
 
     // 速度
-    var speed = 500;
+    var speed = 1000;
     var $href= $(this).attr("href");
     var target = $($href == "#" || $href == "" ? 'html' : $href);
 
