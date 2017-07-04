@@ -165,8 +165,12 @@ select {
   }
 }
 @font-face {
-  font-family: "zou";
-  src: url("../fonts/002zou-Regular.otf") format('woff'), url("../fonts/002zou-Regular.otf") format('truetype');
+  font-family: "851kktt";
+  src: url("../fonts/851H-kktt.ttf") format('woff'), url("../fonts/851H-kktt.ttf") format('truetype');
+}
+@font-face {
+  font-family: "toroman";
+  src: url("../fonts/toroman.ttf") format('woff'), url("../fonts/toroman.ttf") format('truetype');
 }
 body {
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;

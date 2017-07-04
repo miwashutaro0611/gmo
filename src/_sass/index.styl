@@ -14,67 +14,315 @@ body
     position relative
     overflow hidden
     width 100%
-    height auto
+    height 100%
+    background url(../img/index/header_back.jpg) no-repeat center top
+    background-size cover
+    font-family "851kktt"
     &::before
       content ""
       position absolute
       z-index 99
       bottom 0
       width 200%
-      height 200px
+      height 11vw
       background-color #fff
-      transform: skewY(-6deg)
+      transform skewY(-6deg)
+    h1
+      padding:5% 8% 3% 8%
+      font-size 3.6vw
+      color #fff
+      line-height 1.6
+      span
+        font-size 6vw
     &__image
-      width 100%
-      height auto
-  .diagnosis_start
-    position absolute
-    z-index 100
-    bottom 0
-    left 10%
-    width calc(100vmin - 700px)
-    min-width 300px
-    height calc(100vmin - 700px)
-    min-height 300px
-    .circle
-      display table
-      width 100%
-      height 100%
-      padding 0 0 0 20px
-      border 8px solid #fff
-      box-sizing border-box
-      border-radius 50%
-      background-color main_color
-      &__word
-        display table-cell
-        vertical-align middle
-        line-height 2
-        font-size 2.6em
-        font-weight bold
-        color #fff
-      &__image
-        position absolute
-        bottom 2%
-        left 54%
-        width 60%
-        &--content
-          width 100%
-          height auto
+      position absolute
+      width:45%
+      top 2%
+      right 1%
+      z-index 100
+    .diagnosis_start
+      position relative
+      display block
+      z-index 100
+      top 55%
+      left 8%
+      width 30vw
+      height 30vw
+      .circle
+        display table
+        width 100%
+        height 100%
+        padding 0 0 0 20px
+        border 8px solid #fff
+        box-sizing border-box
+        border-radius 50%
+        background-color main_color
+        &__word
+          display table-cell
+          vertical-align middle
+          padding 5%
+          box-sizing border-box
+          line-height 2
+          font-size 2.8vw
+          font-weight bold
+          color #fff
+          //影をつける
+          contour #f01fdb
+        &__image
+          position absolute
+          bottom 0%
+          left 60%
+          width 60%
+          &--content
+            width 100%
+            height auto
 /*****----------------------------------- description *****/
 #description
-  margin 50px 0 0
-  h2
-    padding 0 0 100px
-    font-size 3.4em
-    color #FFA200
-    line-height 1.6
-    letter-spacing 0.2em
-  p
-    padding 0 0 100px
-    font-size 2.2em
-    line-height 1.7
-    letter-spacing 0.2em
+  background main_color
+  margin 2% 0 0
+  position relative
+  .title
+    position relative
+    z-index 3
+    background #fff
+    overflow hidden
+    width 100%
+    height 25vw
+    padding 0 8%
+    box-sizing border-box
+    &::before
+      content ""
+      position absolute
+      z-index 99
+      left -1%
+      bottom 0%
+      width 200%
+      height 11vw
+      background-color main_color
+      transform skewY(-6deg)
+    h2
+      padding 0 0 100px
+      font-size 3.4vw
+      font-family toroman
+      color #fff
+      line-height 1.6
+      letter-spacing 0.2em
+      transform skewY(-6deg)
+      //影をつける
+      contour2 main_color
+  .text
+    position relative
+    z-index 3
+    width 100%
+    color #fff
+    padding 0 15% 15%
+    background url(../img/index/conoha_2.png) no-repeat -20% 30%
+    background-attachment fixed
+    background-size 45% auto
+    box-sizing border-box
+    overflow hidden
+    &__inner
+      position relative
+      margin 5% 0 0
+      padding 5%
+      background rgba(#2b302a, 0.6)
+      h3
+        font-size 6vw
+        font-family "851kktt"
+        color main_color
+        //影をつける
+        contour2 #fff
+      p
+        padding 5% 0
+        font-size 2.2vw
+        line-height 1.8
+        letter-spacing 0.2em
+      h4
+        font-size 4vw
+        padding 3% 0
+        color #fff
+        letter-spacing 0.1em
+        //影をつける
+        contour main_color
+      ul
+        li
+          width 85%
+          background url(../img/index/check_icon.png) no-repeat left center
+          background-size 8%
+          margin 0 auto -3%
+          padding 4% 0 4% 10%
+          box-sizing border-box
+          font-size 2.6vw
+          .marker
+            background main_color
+            box-sizing border-box
+            position relative
+            font-weight normal
+            color #fff
+            z-index 100
+            &::before,&::after
+              content ""
+              position absolute
+              background main_color
+              height 0.99em
+              transform skew(10deg)
+              width 1em
+              z-index -1
+              top 0
+            &::before
+              left -.2em
+            &::after
+              right -.2em
+      .link
+        a
+          link_btn:#fff,main_color
+  .comment
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    left 0
+    z-index 2
+    //コンテンツごとの情報
+    &__hukidashi1
+      //吹き出し呼び出し(top_posi,left_posi,pa_t,pa_r,pa_b,pa_l,hukidashi_size)
+      hukidashi 16% 37% 5.5% 1% 11% 5% 28%
+    &__hukidashi2
+      hukidashi 23% 65% 8% 1% 13% 5% 28%
+    &__hukidashi3
+      hukidashi 32.5% 37% 8% 1% 13% 5.5% 38%
+    &__hukidashi4
+      hukidashi 46% 65% 8% 1% 13% 5% 28%
+    &__hukidashi5
+      hukidashi 59% 62% 5.5% 1% 11% 5% 28%
+    &__hukidashi6
+      hukidashi 73% 65% 8% 1% 13% 5% 28%
+/*****----------------------------------- application *****/
+#application
+  position relative
+  overflow hidden
+  width 100vw
+  background url(../img/index/app_back.jpg) no-repeat center center
+  background-size cover
+  background-attachment fixed
+  &::before
+    content ""
+    position absolute
+    z-index 99
+    left -1%
+    top 0%
+    width 200%
+    height 15vw
+    background-color main_color
+    transform skewY(6deg)
+  .title
+    position relative
+    background #021969
+    overflow hidden
+    width 100%
+    height 25vw
+    margin 8% 0
+    padding 0 8%
+    box-sizing border-box
+    transform skewY(6deg)
+    h2
+      padding 10% 0 0
+      font-size 3.4vw
+      font-family toroman
+      color #021969
+      line-height 1.6
+      letter-spacing 0.2em
+      //影をつける
+      contour2 #fff
+  .text
+    position relative
+    width 100%
+    color #000
+    padding 0 15% 15%
+    box-sizing border-box
+    overflow hidden
+    &__inner
+      margin 5% 0 0
+      padding 5%
+      background rgba(#fff, 0.6)
+      h3
+        font-size 6vw
+        font-family "851kktt"
+        color #021969
+        //影をつける
+        contour2 #fff
+      p
+        padding 5% 0
+        font-size 2.2vw
+        line-height 1.8
+        letter-spacing 0.2em
+      h4
+        font-size 4vw
+        padding 3% 0
+        color #fff
+        letter-spacing 0.1em
+        //影をつける
+        contour #021969
+      ul
+        padding 3% 0 2%
+        li
+          width 22%
+          margin 0 4% 4% 0
+          .list_img
+            img
+              width 80%
+              text-align center
+          .list_text
 
+          &:nth-child(4n)
+            margin 0 0 4% 0
+      .link
+        a
+          link_btn:#fff,#021969
+          background-image url(../img/index/external.png)
+          background-repeat no-repeat
+          background-position 96% center
+          background-size 10% auto
+
+/*****----------------------------------- constitution *****/
+#constitution
+  .title
+    position relative
+    background #021969
+    overflow hidden
+    width 100%
+    height 25vw
+    margin -6% 0 8%
+    padding 0 8%
+    box-sizing border-box
+    transform skewY(-6deg)
+    h2
+      padding 10% 0 0
+      font-size 3.4vw
+      font-family toroman
+      color #021969
+      line-height 1.6
+      letter-spacing 0.2em
+      //影をつける
+      contour2 #fff
+  .text
+    position relative
+    width 100%
+    overflow-x hidden
+    &__inner
+      .scroll
+        position absolute
+        left 0
+        bottom 0
+        &.wid3000
+          z-index 1
+          width 3000px
+        &.wid4000
+          z-index 500
+          width:4000px
+        &.wid7000
+          z-index 1000
+          width 7000px
 /*****----------------------------------- diagnosis *****/
 #diagnosis
   background: url(../img/index/konoha.png) no-repeat 90% 75%
@@ -110,13 +358,23 @@ body
 
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
-@media screen and (max-width: 999px)
-  body
-    width 1000px
-  .header_wrapp
-    .diagnosis_start
-      width 300px
-      height 300px
+// @media screen and (max-width: 999px)
+//   body
+//     width 1000px
+//   .header_wrapp
+//     .header
+//       &::before
+//         height 120px
+//       h1
+//         font-size 36px
+//         span
+//           font-size 60px
+//       .diagnosis_start
+//         width 300px
+//         height 300px
+//         .circle
+//           &__word
+//             font-size 2em
 // ここからspの場合
 @media screen and (max-width: 767px)
   body
