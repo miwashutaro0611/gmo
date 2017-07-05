@@ -5,9 +5,7 @@ block vars
   - var page = pages[key]
 block css
   link(rel="stylesheet", href='./css/index.css')
-block js
-  script(src="./js/plugin/jInvertScroll.js")
-  script(src="./js/index.js")
+//- block js
 block content
   //- include include/_header.pug //-header読み込み
   section.header_wrapp
@@ -269,10 +267,14 @@ block content
         br
         | CONSTITUTION EXAMPLE
     .text
-      .text__inner
-        .scroll.wid3000 あ
-        .scroll.wid4000 い
-        .scroll.wid7000 う
+      .text__inner.txC
+        h3 Conohaサーバ構築例
+        p
+          | このはがおすすめするConohaサーバ構築例です♪
+          br
+          | どんな構築例があるのか見てから診断を行うと
+          br
+          | Conoha診断室をより楽しめます。
   section#diagnosis
     .diagnosis_wrap1
     p.start
