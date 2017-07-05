@@ -262,6 +262,62 @@ textarea.opinion-form {
     display: inline-block;
   }
 }
+@-moz-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
 body {
   font-size: 14px;
 }
@@ -349,11 +405,18 @@ body {
   opacity: 1;
 }
 .global_header__nav .question_list__item--link .image {
+  display: none;
+  opacity: 0;
   position: absolute;
   top: -10px;
   left: 15%;
   width: 100px;
   transform: rotateY(180deg);
+}
+.global_header__nav .question_list__item--link .image.active {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 1s ease;
 }
 /*****-----------------------------------*****/
 @media screen and (max-width: 999px) {
