@@ -442,7 +442,7 @@ body {
   z-index: 3;
   width: 100%;
   color: #fff;
-  padding: 0 15% 15%;
+  padding: 0 15% 5%;
   background: url("../img/index/conoha_2.png") no-repeat -20% 30%;
   background-attachment: fixed;
   background-size: 45% auto;
@@ -526,7 +526,7 @@ body {
   z-index: 2;
 }
 #description .comment__hukidashi1 {
-  top: 16.5%;
+  top: 17%;
   left: 37%;
   padding: 5.5% 1% 11% 5%;
   position: absolute;
@@ -564,9 +564,9 @@ body {
   background-size: 100% auto;
 }
 #description .comment__hukidashi3 {
-  top: 32.5%;
+  top: 32%;
   left: 37%;
-  padding: 8% 1% 13% 5.5%;
+  padding: 7.5% 1% 13% 5.5%;
   position: absolute;
   width: 38%;
   font-size: 2.4vw;
@@ -604,7 +604,7 @@ body {
 #description .comment__hukidashi5 {
   top: 59%;
   left: 62%;
-  padding: 5.5% 1% 11% 5%;
+  padding: 6.5% 1% 11% 5%;
   position: absolute;
   width: 28%;
   font-size: 2.4vw;
@@ -621,9 +621,9 @@ body {
   background-size: 100% auto;
 }
 #description .comment__hukidashi6 {
-  top: 73%;
+  top: 74%;
   left: 65%;
-  padding: 8% 1% 13% 5%;
+  padding: 7.5% 1% 13% 5%;
   position: absolute;
   width: 28%;
   font-size: 2.4vw;
@@ -766,7 +766,7 @@ body {
   position: relative;
   width: 100%;
   color: #000;
-  padding: 0 15% 15%;
+  padding: 0 15% 10%;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -786,6 +786,105 @@ body {
   font-size: 2.2vw;
   line-height: 1.8;
   letter-spacing: 0.2em;
+}
+#constitution .text__inner p.marker_title {
+  padding: 5% 0 0;
+  font-size: 3vw;
+}
+#constitution .text__inner h4 {
+  font-size: 4vw;
+  padding: 3% 0;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-shadow: #06abbf 0.15vw 0.15vw 0px, #06abbf -0.15vw 0.15vw 0px, #06abbf 0.15vw -0.15vw 0px, #06abbf -0.15vw -0.15vw 0px, #06abbf 0vw 0.2vw 0px, #06abbf -0.2vw 0vw 0px, #06abbf 0.2vw 0vw 0px, #06abbf 0vw -0.2vw 0px;
+}
+#constitution .text__inner table {
+  width: 80%;
+  margin: 0 auto;
+}
+#constitution .text__inner table .table__title th {
+  padding: 3%;
+  color: #fff;
+  font-size: 2.4vw;
+  font-weight: normal;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+#constitution .text__inner table .table__title th.active {
+  background: #21b8d7;
+}
+#constitution .text__inner table .table__title th span {
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 0 2% 0 0;
+}
+#constitution .text__inner table .table__text {
+  background: #fff;
+}
+#constitution .text__inner table .table__text th {
+  width: 50%;
+  padding: 3% 10% 3% 0;
+  font-size: 2vw;
+  color: #21b8d7;
+  text-align: right;
+  box-sizing: border-box;
+}
+#constitution .text__inner table .table__text td {
+  width: 50%;
+  padding: 0 0 0 10%;
+  font-size: 2vw;
+  text-align: left;
+  box-sizing: border-box;
+}
+#constitution .text__inner ul {
+  padding: 0 0 5%;
+}
+#constitution .text__inner ul li {
+  width: 80%;
+  background: url("../img/index/check_icon.png") no-repeat left center;
+  background-size: 8%;
+  margin: 0 auto -3%;
+  padding: 4% 0 4% 10%;
+  box-sizing: border-box;
+  font-size: 2.2vw;
+}
+#constitution .text__inner ul li .marker {
+  background: #21b8d7;
+  box-sizing: border-box;
+  position: relative;
+  font-weight: normal;
+  color: #fff;
+  z-index: 100;
+}
+#constitution .text__inner ul li .marker::before,
+#constitution .text__inner ul li .marker::after {
+  content: "";
+  position: absolute;
+  background: #21b8d7;
+  height: 0.99em;
+  transform: skew(10deg);
+  width: 1em;
+  z-index: -1;
+  top: 0;
+}
+#constitution .text__inner ul li .marker::before {
+  left: -0.2em;
+}
+#constitution .text__inner ul li .marker::after {
+  right: -0.2em;
+}
+#constitution .text__inner .link a {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 3%;
+  color: #fff;
+  background-color: #21b8d7;
+  box-sizing: border-box;
+  background-image: url("../img/index/external.png");
+  background-repeat: no-repeat;
+  background-position: 96% center;
+  background-size: 10% auto;
 }
 /*****----------------------------------- diagnosis *****/
 #diagnosis {
@@ -842,8 +941,3 @@ body {
   transform: rotate(3deg);
 }
 /*****-----------------------------------*****/
-@media screen and (max-width: 767px) {
-  body {
-    display: none;
-  }
-}

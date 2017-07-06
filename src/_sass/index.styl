@@ -115,7 +115,7 @@ body
     z-index 3
     width 100%
     color #fff
-    padding 0 15% 15%
+    padding 0 15% 5%
     background url(../img/index/conoha_2.png) no-repeat -20% 30%
     background-attachment fixed
     background-size 45% auto
@@ -186,17 +186,17 @@ body
     //コンテンツごとの情報
     &__hukidashi1
       //吹き出し呼び出し(top_posi,left_posi,pa_t,pa_r,pa_b,pa_l,hukidashi_size)
-      hukidashi 16.5% 37% 5.5% 1% 11% 5% 28%
+      hukidashi 17% 37% 5.5% 1% 11% 5% 28%
     &__hukidashi2
       hukidashi 23% 65% 8% 1% 13% 5% 28%
     &__hukidashi3
-      hukidashi 32.5% 37% 8% 1% 13% 5.5% 38%
+      hukidashi 32% 37% 7.5% 1% 13% 5.5% 38%
     &__hukidashi4
       hukidashi 46% 65% 8% 1% 13% 5% 28%
     &__hukidashi5
-      hukidashi 59% 62% 5.5% 1% 11% 5% 28%
+      hukidashi 59% 62% 6.5% 1% 11% 5% 28%
     &__hukidashi6
-      hukidashi 73% 65% 8% 1% 13% 5% 28%
+      hukidashi 74% 65% 7.5% 1% 13% 5% 28%
 /*****----------------------------------- application *****/
 #application
   position relative
@@ -310,7 +310,7 @@ body
     position relative
     width 100%
     color #000
-    padding 0 15% 15%
+    padding 0 15% 10%
     box-sizing border-box
     overflow hidden
     &__inner
@@ -328,11 +328,91 @@ body
         font-size 2.2vw
         line-height 1.8
         letter-spacing 0.2em
+        &.marker_title
+          padding 5% 0 0
+          font-size 3vw
+      h4
+        font-size 4vw
+        padding 3% 0
+        color #fff
+        letter-spacing 0.1em
+        //影をつける
+        contour #06ABBF
+      table
+        width 80%
+        margin 0 auto
+        .table
+          &__title
+            th
+              padding 3%
+              color #fff
+              font-size 2.4vw
+              font-weight normal
+              box-sizing border-box
+              line-height 1.6
+              &.active
+                background plan_color
+              span
+                font-size 4vw
+                font-weight bold
+                padding 0 2% 0 0
+          &__text
+            background #fff
+            th
+              width 50%
+              padding 3% 10% 3% 0
+              font-size 2vw
+              color plan_color
+              text-align right
+              box-sizing border-box
+            td
+              width 50%
+              padding 0 0 0 10%
+              font-size 2vw
+              text-align left
+              box-sizing border-box
+      ul
+        padding 0 0 5%
+        li
+          width 80%
+          background url(../img/index/check_icon.png) no-repeat left center
+          background-size 8%
+          margin 0 auto -3%
+          padding 4% 0 4% 10%
+          box-sizing border-box
+          font-size 2.2vw
+          .marker
+            background plan_color
+            box-sizing border-box
+            position relative
+            font-weight normal
+            color #fff
+            z-index 100
+            &::before,&::after
+              content ""
+              position absolute
+              background plan_color
+              height 0.99em
+              transform skew(10deg)
+              width 1em
+              z-index -1
+              top 0
+            &::before
+              left -.2em
+            &::after
+              right -.2em
+      .link
+        a
+          link_btn:#fff,plan_color
+          background-image url(../img/index/external.png)
+          background-repeat no-repeat
+          background-position 96% center
+          background-size 10% auto
 /*****----------------------------------- diagnosis *****/
 #diagnosis
-  background: url(../img/index/konoha.png) no-repeat 90% 75%
+  background url(../img/index/konoha.png) no-repeat 90% 75%
   background-size: auto 65%
-  width:100%
+  width 100%
   height 300px
   margin 0 auto 150px
   padding 15% 0 5%
@@ -343,7 +423,7 @@ body
     width 90%
     margin 0 auto
     a
-      display: block
+      display block
       width 60%
       font-size 4em
       color #000
@@ -381,6 +461,6 @@ body
 //           &__word
 //             font-size 2em
 // ここからspの場合
-@media screen and (max-width: 767px)
-  body
-    display none
+// @media screen and (max-width: 767px)
+//   body
+//     display none
