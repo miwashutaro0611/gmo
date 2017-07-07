@@ -741,7 +741,6 @@ body {
 }
 /*****----------------------------------- constitution *****/
 #constitution {
-  width: 100vw;
   background: #48f7f2;
 }
 #constitution .title {
@@ -767,7 +766,7 @@ body {
   position: relative;
   width: 100%;
   color: #000;
-  padding: 0 15% 15%;
+  padding: 0 15% 10%;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -805,15 +804,13 @@ body {
 }
 #constitution .text__inner table .table__title th {
   padding: 3%;
-  color: #21b8d7;
+  color: #fff;
   font-size: 2.4vw;
   font-weight: normal;
-  background: #414141;
   box-sizing: border-box;
   line-height: 1.6;
 }
 #constitution .text__inner table .table__title th.active {
-  color: #fff;
   background: #21b8d7;
 }
 #constitution .text__inner table .table__title th span {
@@ -891,74 +888,56 @@ body {
 }
 /*****----------------------------------- diagnosis *****/
 #diagnosis {
-  position: relative;
-  width: 100vw;
-  background: #fffc00;
-}
-#diagnosis::before {
-  content: "";
-  position: absolute;
-  z-index: 99;
-  left: -1%;
-  top: 0%;
-  width: 200%;
-  height: 8vw;
-  background-color: #ffa200;
-  transform: skewY(6deg);
-}
-#diagnosis .title {
-  position: relative;
-  background: #ffa200;
+  background: url("../img/index/konoha.png") no-repeat 90% 75%;
+  background-size: auto 65%;
   width: 100%;
-  height: 20vw;
-  margin: 0 0 8%;
-  padding: 0 8%;
-  box-sizing: border-box;
-  transform: skewY(6deg);
-}
-#diagnosis .title h2 {
-  padding: 3% 0 0;
-  font-size: 3.4vw;
-  font-family: toroman;
-  color: #ffa200;
-  line-height: 1.6;
-  letter-spacing: 0.2em;
-  text-shadow: #fff 0.2vw 0.2vw 0px, #fff -0.2vw 0.2vw 0px, #fff 0.2vw -0.2vw 0px, #fff -0.2vw -0.2vw 0px, #fff 0vw 0.3vw 0px, #fff -0.3vw 0vw 0px, #fff 0.3vw 0vw 0px, #fff 0vw -0.3vw 0px;
-}
-#diagnosis .text {
+  height: 300px;
+  margin: 0 auto 150px;
+  padding: 15% 0 5%;
   position: relative;
-  width: 100%;
-  color: #000;
-  padding: 0 15% 15%;
-  box-sizing: border-box;
   overflow: hidden;
 }
-#diagnosis .text__inner {
-  margin: 5% 0 0;
-  padding: 5%;
-  background: rgba(255,255,255,0.6);
+#diagnosis .start {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
 }
-#diagnosis .text__inner h3 {
-  font-size: 6vw;
-  font-family: "851kktt";
-  color: #06abbf;
-  text-shadow: #fff 0.2vw 0.2vw 0px, #fff -0.2vw 0.2vw 0px, #fff 0.2vw -0.2vw 0px, #fff -0.2vw -0.2vw 0px, #fff 0vw 0.3vw 0px, #fff -0.3vw 0vw 0px, #fff 0.3vw 0vw 0px, #fff 0vw -0.3vw 0px;
+#diagnosis .start a {
+  display: block;
+  width: 60%;
+  font-size: 4em;
+  color: #000;
+  border: 2px solid #000;
+  padding: 3%;
+  text-align: center;
+  box-sizing: border-box;
 }
-#diagnosis .text__inner p {
-  padding: 5% 0;
-  font-size: 2.2vw;
-  line-height: 1.8;
-  letter-spacing: 0.2em;
+#diagnosis .start a span.large {
+  color: #ffa200;
+  font-size: 7em;
 }
-#diagnosis .text__inner p.marker_title {
-  padding: 5% 0 0;
-  font-size: 3vw;
+#diagnosis .diagnosis_wrap1 {
+  width: 220%;
+  height: 10%;
+  margin: 10% 0 0 -10%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 1.2vw 0px 0px #2576c2 inset, 0px -1.2vw 0px 0px #2576c2 inset;
+  position: absolute;
+  top: 0%;
+  z-index: 100;
+  transform: rotate(3deg);
 }
-#diagnosis .text__inner h4 {
-  font-size: 4vw;
-  padding: 3% 0;
-  color: #fff;
-  letter-spacing: 0.1em;
-  text-shadow: #06abbf 0.15vw 0.15vw 0px, #06abbf -0.15vw 0.15vw 0px, #06abbf 0.15vw -0.15vw 0px, #06abbf -0.15vw -0.15vw 0px, #06abbf 0vw 0.2vw 0px, #06abbf -0.2vw 0vw 0px, #06abbf 0.2vw 0vw 0px, #06abbf 0vw -0.2vw 0px;
+#diagnosis .diagnosis_wrap2 {
+  width: 220%;
+  height: 10%;
+  margin: 10% 0 0 -10%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 1.2vw 0px 0px #2576c2 inset, 0px -1.2vw 0px 0px #2576c2 inset;
+  position: absolute;
+  top: 65%;
+  z-index: 100;
+  transform: rotate(3deg);
 }
 /*****-----------------------------------*****/

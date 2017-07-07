@@ -1,0 +1,435 @@
+/* ----------------------------------------
+fileName : style.scss
+writer   : Daichi Seki, Miwa Shuntaro
+---------------------------------------- */
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+@media screen and (min-width: 767px) {
+  a:hover {
+    opacity: 0.8;
+  }
+}
+@font-face {
+  font-family: "851kktt";
+  src: url("../fonts/851H-kktt.ttf") format('woff'), url("../fonts/851H-kktt.ttf") format('truetype');
+}
+@font-face {
+  font-family: "toroman";
+  src: url("../fonts/toroman.ttf") format('woff'), url("../fonts/toroman.ttf") format('truetype');
+}
+body {
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+.cfx:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.flL {
+  float: left;
+}
+.flR {
+  float: right;
+}
+.flex-row {
+  flex: row;
+}
+.flex-column {
+  flex: column;
+}
+.flex-row-reverse {
+  flex: row-reverse;
+}
+.flex-column-reverse {
+  flex: column-reverse;
+}
+.txL {
+  text-align: left;
+}
+.txC {
+  text-align: center;
+}
+.txR {
+  text-align: right;
+}
+.tab1 {
+  padding-left: 20px;
+}
+.tab2 {
+  padding-left: 40px;
+}
+.tab3 {
+  padding-left: 60px;
+}
+ol.cfx li,
+ul.cfx li {
+  float: left;
+}
+ol {
+  list-style: none;
+}
+textarea.opinion-form {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.pc-display {
+  display: block;
+}
+.sp-display,
+.sp-indisplay {
+  display: none;
+}
+@media (min-width: 767px) {
+  .pc-block {
+    display: block;
+  }
+  .pc-inblock {
+    display: inline;
+  }
+}
+@media (max-width: 767px) {
+  .sp-block {
+    display: block;
+  }
+  .pc-display,
+  .pc-indisplay {
+    display: none;
+  }
+  .sp-display {
+    display: block;
+  }
+  .sp-indisplay {
+    display: inline-block;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+body {
+  font-size: 14px;
+}
+/*****----------------------------------- header共有部分 *****/
+.global_header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+.global_header__h1 {
+  height: 120px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background: #ffa200;
+}
+.global_header__h1--link {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #fff;
+}
+.global_header__nav {
+  margin: 10px 0;
+  padding: 0 3%;
+}
+.global_header__nav .question_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 70px;
+}
+.global_header__nav .question_list__item {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0 35px 0 0;
+  background-color: #ffa200;
+  transition: 1s;
+}
+.global_header__nav .question_list__item:hover {
+  cursor: pointer;
+}
+.global_header__nav .question_list__item.active {
+  flex: 2.5;
+  background-color: #4585e6;
+}
+.global_header__nav .question_list__item.active::after {
+  border-top: 35px solid #4585e6;
+}
+.global_header__nav .question_list__item::before,
+.global_header__nav .question_list__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border: 35px solid transparent;
+  transform: rotate(-90deg);
+  transition: 1s;
+}
+.global_header__nav .question_list__item::before {
+  border-top: 35px solid #fff;
+  cursor: default;
+}
+.global_header__nav .question_list__item::after {
+  right: -70px;
+  border-top: 35px solid #ffa200;
+}
+.global_header__nav .question_list__item--link {
+  position: relative;
+  display: block;
+  line-height: 70px;
+  text-align: right;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+}
+.global_header__nav .question_list__item--link:hover {
+  opacity: 1;
+}
+.global_header__nav .question_list__item--link .image {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: -10px;
+  left: 15%;
+  width: 100px;
+  transform: rotateY(180deg);
+}
+.global_header__nav .question_list__item--link .image.active {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 1s ease;
+}
+/*****-----------------------------------*****/
+@media screen and (max-width: 999px) {
+  body {
+    width: 1000px;
+  }
+  .header_wrapp .diagnosis_start {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    display: none;
+  }
+}
