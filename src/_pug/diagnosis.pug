@@ -9,20 +9,82 @@ block css
 block content
   include include/_header
   section.diagnosis_wrap
-    div#1th.diagnosis_wrap__item
-      p ago1
-    div#2th.diagnosis_wrap__item
-      p ago2
-    div#3th.diagnosis_wrap__item
-      p ago3
-    div#4th.diagnosis_wrap__item
-      p ago4
-    div#5th.diagnosis_wrap__item
-      p ago5
-    div#6th.diagnosis_wrap__item
-      p ago6
-    div#7th.diagnosis_wrap__item
-      p ago7
-    div#8th.diagnosis_wrap__item
-      p ago8
+    #1th.diagnosis_wrap__item
+      .question
+        .question__query どのような場面で使いますか？
+        .question__choice
+          .individual_choice
+            p 個人
+          .individual_choice
+            p 企業
+          .individual_choice
+            p 決めていない
+    #2th.diagnosis_wrap__item
+      .question
+        .question__query どのようなことに利用したいですか？
+        .question__choice
+          .individual_choice
+            p ブログサイト：個人
+          .individual_choice
+            p 小規模サイト：個人
+          .individual_choice
+            p 大規模サイト：企業
+    #3th.diagnosis_wrap__item
+      .question
+        .question__query 容量はどのくらいにしますか？
+        .question__choice
+          .individual_choice
+            p ？？？
+          .individual_choice
+            p ？？？
+          .individual_choice
+            p ？？？
+    #4th.diagnosis_wrap__item
+      .question
+        .question__query データベースやメールは使いますか？
+        .question__choice
+          .individual_choice
+            p 使う
+          .individual_choice
+            p 使わない
+          .individual_choice
+            p 決めていない
+    #5th.diagnosis_wrap__item
+      .question
+        .question__query Webサーバは外部に公開しますか？
+        .question__choice
+          .individual_choice
+            p 公開する
+          .individual_choice
+            p 公開しない
+          .individual_choice
+            p 公開・非公開の両方(複数サーバ)
+    #6th.diagnosis_wrap__item
+      .question
+        .question__query 自動バックアップをConohaで行いますか？
+        .question__choice
+          .individual_choice
+            p 行う
+          .individual_choice
+            p 行わない
+    #7th.diagnosis_wrap__item
+      .question
+        .question__query 海外にサーバを立てますか？
+        .question__choice
+          .individual_choice
+            p 日本
+          .individual_choice
+            p アメリカ
+          .individual_choice
+            p シンガポール
+    #8th.diagnosis_wrap__item
+      .question
+        .question__query 使用したいサービスはありますか？
+        .question__choice
+          .individual_choice
+            p ある
+          .individual_choice
+            p ない
+    .fixed_conoha
+      img.fixed_conoha__img(src="./img/index/conoha_main.png" alt="固定このは")
   include include/_footer

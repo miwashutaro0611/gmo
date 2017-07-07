@@ -331,6 +331,43 @@ body {
   height: calc(100vh - 200px);
   background-color: rgba(255,162,0,0.5);
 }
+.diagnosis_wrap__item .question {
+  width: 100%;
+  height: 100vh;
+  padding: 5% 8%;
+  box-sizing: border-box;
+}
+.diagnosis_wrap__item .question__query {
+  width: calc(100% - 25%);
+  font-size: 3vw;
+  background-color: #fff;
+  height: 12vh;
+  line-height: 12vh;
+}
+.diagnosis_wrap__item .question__choice .individual_choice {
+  width: calc(100% - 35%);
+  margin-top: 5vh;
+  font-size: 3.5vw;
+  background-color: #fff;
+  height: 10vh;
+  line-height: 10vh;
+}
+.diagnosis_wrap .fixed_conoha {
+  position: fixed;
+  top: 260px;
+  right: 5%;
+  width: 30%;
+  height: auto;
+}
+.diagnosis_wrap .fixed_conoha__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
 /*****-----------------------------------*****/
 @media screen and (max-width: 999px) {
   body {
