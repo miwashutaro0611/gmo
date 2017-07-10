@@ -11,7 +11,6 @@ $(function(){
     $(".question_list").find('li.question_list__item').removeClass('active')
     // 親要素のliに.activeを付与
     $(this).parent().addClass('active');
-
     // このはちゃんの画像を非表示に
     $(".question_list").find('li.question_list__item img.image').removeClass('active');
     // クリックした要素にこのはちゃんを表示
