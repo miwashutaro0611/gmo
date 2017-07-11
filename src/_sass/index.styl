@@ -118,11 +118,18 @@ body
     width 100%
     color #fff
     padding 0 15% 5%
-    background url(../img/index/conoha_2.png) no-repeat -20% 30%
+    background url(../img/index/conoha_2.png) no-repeat
+    background-position -85% 30%
     background-attachment fixed
     background-size 45% auto
     box-sizing border-box
     overflow hidden
+    &.back_move
+      background-position -20% 30%
+      animation back_image_move 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000)
+    &.back_remove
+      background-position -85% 30%
+      animation back_image_remove 1s cubic-bezier(0.075, 0.820, 0.165, 1.000)
     &__inner
       position relative
       margin 5% 0 0
