@@ -17,7 +17,7 @@ $(function(){
         var scroll = $(window).scrollTop();
         //高さ
         var windowHeight = $(window).height();
-        if (scroll > imgPos + windowHeight * 0.42 && scroll < imgPos + windowHeight * 2.16) {
+        if (scroll > imgPos + windowHeight * 0.42 && scroll < imgPos + windowHeight * 2.42) {
           //クラスを付加
           $("#description").find(".text").addClass('back_move');
           //クラスを消去
@@ -33,6 +33,6 @@ $(function(){
         console.log('scrollの出力 : %s', scroll);
         console.log('windowHeightの出力 : %s', windowHeight);
         console.log('計算結果の出力s : %s', imgPos + windowHeight * 0.42);
-        console.log('計算結果の出力g : %s', imgPos + windowHeight * 2.16);
+        console.log('計算結果の出力g : %s', imgPos + windowHeight * 2.8);
     });
 });
