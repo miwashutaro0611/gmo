@@ -5,9 +5,9 @@ block vars
   - var page = pages[key]
 block css
   link(rel="stylesheet", href='./css/index.css')
-//- block js
+block js
+  script(src="./js/index.js")
 block content
-  //- include include/_header.pug //-header読み込み
   section.header_wrapp
     header.header
       h1
@@ -396,21 +396,23 @@ block content
         br
         | SINDAN START
     .text
-      .text__inner
-  //- section.header_wrapp
-  //-   header.header
-  //-     h1
-  //-       | あなたにピッタリなVPSサービスを
-  //-       br
-  //-       | このはと一緒に考える
-  //-       br
-  //-       span 「Conoha診断室」
-  //-     a.diagnosis_start(href='diagnosis.html')
-  //-       .circle
-  //-         .circle__word
-  //-           | 今すぐ診断
-  //-           br
-  //-           | スタート！
-  //-           .circle__image
-  //-             img.circle__image--content(src="./img/index/conoha_01.png" alt="このは1")
-  //-   img.header__image(src="./img/index/conoha_main.png")
+      .text__inner.txC
+        h3 Conoha診断スタート
+        p
+          | ここまで読んでくれてありがとー！
+          br
+          | Conohaサーバでは豊富な種類のサービスを
+          br
+          | 初心者の方でも安心にご利用いただけます。
+          br
+          | その豊富な種類の中からConoha診断室で
+          br
+          | 自分に合ったサービス、サーバをこのはと
+          br
+          | 一緒に考えましょう♪
+      .label.txC
+        p
+          a(href='diagnosis.html')
+            | Conoha診断
+            br
+            | スタート

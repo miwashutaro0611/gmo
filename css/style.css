@@ -1,6 +1,8 @@
 /* ----------------------------------------
-fileName : style.scss
+fileName : style.styl
 writer   : Daichi Seki, Miwa Shuntaro
+
+-- 診断・結果共通部分stylの記入
 ---------------------------------------- */
 @charset "UTF-8";
 html,
@@ -320,6 +322,94 @@ textarea.opinion-form {
   100% {
     display: block;
     opacity: 1;
+  }
+}
+@-moz-keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@-webkit-keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@-o-keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@-moz-keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
+  }
+}
+@-webkit-keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
+  }
+}
+@-o-keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
+  }
+}
+@keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
   }
 }
 body {

@@ -1,6 +1,8 @@
 /* ----------------------------------------
-fileName : style.scss
+fileName : index.styl
 writer   : Daichi Seki, Miwa Shuntaro
+
+-- トップページstylの記入
 ---------------------------------------- */
 @import "include/_import.styl";
 
@@ -53,7 +55,7 @@ body
         width 100%
         height 100%
         padding 0 0 0 20px
-        border 8px solid #fff
+        border 0.8vw solid #fff
         box-sizing border-box
         border-radius 50%
         background-color main_color
@@ -116,11 +118,18 @@ body
     width 100%
     color #fff
     padding 0 15% 5%
-    background url(../img/index/conoha_2.png) no-repeat -20% 30%
+    background url(../img/index/conoha_2.png) no-repeat
+    background-position -85% 30%
     background-attachment fixed
     background-size 45% auto
     box-sizing border-box
     overflow hidden
+    &.back_move
+      background-position -20% 30%
+      animation back_image_move 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000)
+    &.back_remove
+      background-position -85% 30%
+      animation back_image_remove 1s cubic-bezier(0.075, 0.820, 0.165, 1.000)
     &__inner
       position relative
       margin 5% 0 0
@@ -190,13 +199,13 @@ body
     &__hukidashi2
       hukidashi 23% 65% 8% 1% 13% 5% 28%
     &__hukidashi3
-      hukidashi 32% 37% 7.5% 1% 13% 5.5% 38%
+      hukidashi 32.5% 37% 7.5% 1% 13% 5.5% 38%
     &__hukidashi4
-      hukidashi 46% 65% 8% 1% 13% 5% 28%
+      hukidashi 47% 65% 8% 1% 13% 5% 28%
     &__hukidashi5
-      hukidashi 59% 62% 6.5% 1% 11% 5% 28%
+      hukidashi 62% 62% 6.5% 1% 11% 5% 28%
     &__hukidashi6
-      hukidashi 74% 65% 7.5% 1% 13% 5% 28%
+      hukidashi 77% 65% 7.5% 1% 13% 5% 28%
 /*****----------------------------------- application *****/
 #application
   position relative
@@ -424,8 +433,8 @@ body
     position absolute
     z-index 99
     left -1%
-    top 0%
-    width 200%
+    top -5%
+    width 101%
     height 8vw
     background-color main_color
     transform skewY(6deg)
@@ -452,17 +461,20 @@ body
     position relative
     width 100%
     color #000
-    padding 0 15% 15%
+    padding 0 15%
+    background url(../img/index/conoha_3.png) no-repeat 140% bottom
+    // background-attachment fixed
+    background-size 70% auto
     box-sizing border-box
     overflow hidden
     &__inner
-      margin 5% 0 0
+      margin 5% 0 80%
       padding 5%
       background rgba(#fff, 0.6)
       h3
         font-size 6vw
         font-family "851kktt"
-        color #06ABBF
+        color main_color
         //影をつける
         contour2 #fff
       p
@@ -480,6 +492,22 @@ body
         letter-spacing 0.1em
         //影をつける
         contour #06ABBF
+  .label
+    // margin 75% 0 0
+    position absolute
+    top 50%
+    left 2%
+    p
+      a
+        display block
+        width 55vw
+        padding 16% 10% 32% 10%
+        background url(../img/index/balloon/balloon3.png) no-repeat
+        background-size 100% auto
+        box-sizing border-box
+        font-size 4vw
+        line-height 1.7
+        color #000
 
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅

@@ -1,6 +1,8 @@
 /* ----------------------------------------
-fileName : style.scss
+fileName : index.styl
 writer   : Daichi Seki, Miwa Shuntaro
+
+-- トップページstylの記入
 ---------------------------------------- */
 @charset "UTF-8";
 html,
@@ -322,6 +324,94 @@ textarea.opinion-form {
     opacity: 1;
   }
 }
+@-moz-keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@-webkit-keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@-o-keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@keyframes back_image_move {
+  0% {
+    background-position: -85% 30%;
+  }
+  1% {
+    background-position: -85% 30%;
+  }
+  100% {
+    background-position: -20% 30%;
+  }
+}
+@-moz-keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
+  }
+}
+@-webkit-keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
+  }
+}
+@-o-keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
+  }
+}
+@keyframes back_image_remove {
+  0% {
+    background-position: -20% 30%;
+  }
+  1% {
+    background-position: -20% 30%;
+  }
+  100% {
+    background-position: -85% 30%;
+  }
+}
 body {
   font-size: 14px;
 }
@@ -378,7 +468,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 0 0 0 20px;
-  border: 8px solid #fff;
+  border: 0.8vw solid #fff;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #ffa200;
@@ -447,11 +537,20 @@ body {
   width: 100%;
   color: #fff;
   padding: 0 15% 5%;
-  background: url("../img/index/conoha_2.png") no-repeat -20% 30%;
+  background: url("../img/index/conoha_2.png") no-repeat;
+  background-position: -85% 30%;
   background-attachment: fixed;
   background-size: 45% auto;
   box-sizing: border-box;
   overflow: hidden;
+}
+#description .text.back_move {
+  background-position: -20% 30%;
+  animation: back_image_move 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#description .text.back_remove {
+  background-position: -85% 30%;
+  animation: back_image_remove 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #description .text__inner {
   position: relative;
@@ -568,7 +667,7 @@ body {
   background-size: 100% auto;
 }
 #description .comment__hukidashi3 {
-  top: 32%;
+  top: 32.5%;
   left: 37%;
   padding: 7.5% 1% 13% 5.5%;
   position: absolute;
@@ -587,7 +686,7 @@ body {
   background-size: 100% auto;
 }
 #description .comment__hukidashi4 {
-  top: 46%;
+  top: 47%;
   left: 65%;
   padding: 8% 1% 13% 5%;
   position: absolute;
@@ -606,7 +705,7 @@ body {
   background-size: 100% auto;
 }
 #description .comment__hukidashi5 {
-  top: 59%;
+  top: 62%;
   left: 62%;
   padding: 6.5% 1% 11% 5%;
   position: absolute;
@@ -625,7 +724,7 @@ body {
   background-size: 100% auto;
 }
 #description .comment__hukidashi6 {
-  top: 74%;
+  top: 77%;
   left: 65%;
   padding: 7.5% 1% 13% 5%;
   position: absolute;
@@ -904,8 +1003,8 @@ body {
   position: absolute;
   z-index: 99;
   left: -1%;
-  top: 0%;
-  width: 200%;
+  top: -5%;
+  width: 101%;
   height: 8vw;
   background-color: #ffa200;
   transform: skewY(6deg);
@@ -933,19 +1032,21 @@ body {
   position: relative;
   width: 100%;
   color: #000;
-  padding: 0 15% 15%;
+  padding: 0 15%;
+  background: url("../img/index/conoha_3.png") no-repeat 140% bottom;
+  background-size: 70% auto;
   box-sizing: border-box;
   overflow: hidden;
 }
 #diagnosis .text__inner {
-  margin: 5% 0 0;
+  margin: 5% 0 80%;
   padding: 5%;
   background: rgba(255,255,255,0.6);
 }
 #diagnosis .text__inner h3 {
   font-size: 6vw;
   font-family: "851kktt";
-  color: #06abbf;
+  color: #ffa200;
   text-shadow: #fff 0.2vw 0.2vw 0px, #fff -0.2vw 0.2vw 0px, #fff 0.2vw -0.2vw 0px, #fff -0.2vw -0.2vw 0px, #fff 0vw 0.3vw 0px, #fff -0.3vw 0vw 0px, #fff 0.3vw 0vw 0px, #fff 0vw -0.3vw 0px;
 }
 #diagnosis .text__inner p {
@@ -964,5 +1065,21 @@ body {
   color: #fff;
   letter-spacing: 0.1em;
   text-shadow: #06abbf 0.15vw 0.15vw 0px, #06abbf -0.15vw 0.15vw 0px, #06abbf 0.15vw -0.15vw 0px, #06abbf -0.15vw -0.15vw 0px, #06abbf 0vw 0.2vw 0px, #06abbf -0.2vw 0vw 0px, #06abbf 0.2vw 0vw 0px, #06abbf 0vw -0.2vw 0px;
+}
+#diagnosis .label {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+#diagnosis .label p a {
+  display: block;
+  width: 55vw;
+  padding: 16% 10% 32% 10%;
+  background: url("../img/index/balloon/balloon3.png") no-repeat;
+  background-size: 100% auto;
+  box-sizing: border-box;
+  font-size: 4vw;
+  line-height: 1.7;
+  color: #000;
 }
 /*****-----------------------------------*****/

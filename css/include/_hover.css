@@ -1,3 +1,10 @@
+/* ----------------------------------------
+fileName  _hover.styl
+writer    Daichi Seki, Miwa Shuntaro
+
+-- hover時の効果を格納
+(sp時にhoverをなくすため)
+---------------------------------------- */
 @media screen and (min-width: 767px) {
   a:hover {
     opacity: 0.8;
