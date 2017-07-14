@@ -32,11 +32,42 @@ $(function(){
   });
 
 
+  /* -------------------------------------------------- */
   // checkboxを複数選択不可に
   $('.checkbox').on('click', function(){
     // クリックした要素のname属性を取得し格納
-    var attr_name = $(this).attr('name');
-    $('.checkbox[name="'+attr_name+'"]').prop('checked', false);
+    var attrName = $(this).attr('name');
+    $('.checkbox[name="'+attrName+'"]').prop('checked', false);
     $(this).prop('checked', true);
+
+    var count = checkedBoxCount();
+    checkedBoxCountDisp(count);
   });
+
+
+  /* -------------------------------------------------- */
+  // チェック済みの設問の数を格納する
+  function checkedBoxCount(){
+    var count = 0;
+    for(var i=1; i<9; i++){
+      count += $('[name="'+i+'th_check"]:checked').length;
+    }
+    return count;
+  }
+
+
+  /* -------------------------------------------------- */
+  // 未チェックの設問数を画面右下に表示
+  function checkedBoxCountDisp(count){
+    if(count === 0){
+      return false;
+    }else{
+      if($('.checked_count').length !== 0){
+        $('.checked_count').text(8-count);
+      }else{
+        var str = '<div class="checked_count">'+(8-count)+'</div>';
+        $('.diagnosis_wrap').append(str);
+      }
+    }
+  }
 });
