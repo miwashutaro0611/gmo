@@ -32,3 +32,35 @@ writer   : Daichi Seki, Miwa Shuntaro
     background-position -20% 30%
   100%
     background-position -85% 30%
+
+// 回転アニメーション
+@keyframes rotation
+  from
+    transform rotate(0deg)
+
+  to
+    transform rotate(360deg)
+
+
+// ピンク色の背景のアニメーション
+@keyframes color-fade
+  0%
+    opacity 1
+
+  50%
+    opacity .7
+
+
+// 点滅のアニメーション
+@keyframes text-fade
+  0%
+    opacity 1
+
+  25%
+    opacity .8
+
+  50%
+    opacity .9
+
+  75%
+    opacity .6

@@ -7,6 +7,14 @@ block css
   link(rel="stylesheet", href='./css/index.css')
 block js
   script(src="./js/index.js")
+block loading
+  #loader-bg
+    #loader
+      .loading
+        span.loading__title LOADING
+        span.loading__circle1
+        span.loading__circle2
+        span.loading__circle3
 block content
   section.header_wrapp
     header.header
@@ -47,7 +55,7 @@ block content
           br
           | このはが8個の質問をするからそれに答えるだけ！
           br
-          | 質問に答えるとこのはが考えた6個のタイプの中から
+          | 質問に答えるとこのはが考えた5個のタイプの中から
           br
           | 診断結果が出るよ。その結果で申し込むことも
           br

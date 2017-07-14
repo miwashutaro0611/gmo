@@ -179,6 +179,12 @@ select {
 body {
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
+::selection {
+  background: #ffa200;
+}
+::-moz-selection {
+  background: #ffa200;
+}
 .cfx:after {
   content: "";
   display: block;
@@ -267,6 +273,78 @@ textarea.opinion-form {
   .sp-indisplay {
     display: inline-block;
   }
+}
+#loader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #071063 url("../img/common/conoha.png") no-repeat 0% 0%;
+  background-size: 45% auto;
+  z-index: 9998;
+}
+#loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 15vw;
+  height: 15vw;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 9999;
+}
+.loading {
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+}
+.loading::after {
+  border-radius: 40%;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #e8a, rgba(250,238,255,0.3) 90%, rgba(230,238,255,0.5));
+  animation: color-fade 3s infinite linear;
+}
+.loading__circle1,
+.loading__circle2,
+.loading__circle3 {
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  background: #0af;
+  width: 15vw;
+  height: 15vw;
+  transform-origin: 50% 47%;
+  border-radius: 40%;
+  animation: rotation 3s infinite linear;
+}
+.loading__circle2 {
+  opacity: 0.2;
+  background: #ff0;
+  animation: rotation 5s infinite linear;
+}
+.loading__circle3 {
+  animation: rotation 2.5s infinite linear;
+}
+.loading__title {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  font-family: toroman;
+  color: #fff;
+  text-align: center;
+  font-size: 2vw;
+  line-height: 2rem;
+  letter-spacing: 0.15em;
+  animation: text-fade 300ms infinite linear;
+  text-shadow: #ffa200 0.15vw 0.15vw 0px, #ffa200 -0.15vw 0.15vw 0px, #ffa200 0.15vw -0.15vw 0px, #ffa200 -0.15vw -0.15vw 0px, #ffa200 0vw 0.2vw 0px, #ffa200 -0.2vw 0vw 0px, #ffa200 0.2vw 0vw 0px, #ffa200 0vw -0.2vw 0px;
 }
 @-moz-keyframes fadeIn {
   0% {
@@ -410,6 +488,126 @@ textarea.opinion-form {
   }
   100% {
     background-position: -85% 30%;
+  }
+}
+@-moz-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes color-fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes color-fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@-o-keyframes color-fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@keyframes color-fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes text-fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes text-fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.6;
+  }
+}
+@-o-keyframes text-fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.6;
+  }
+}
+@keyframes text-fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.6;
   }
 }
 body {

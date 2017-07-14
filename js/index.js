@@ -7,7 +7,6 @@ writer   : Daichi Seki, Miwa Shuntaro
 //変数
 //横幅
 var width=window.innerWidth;
-//縦幅
 
 $(function(){
   $(window).scroll(function (){
@@ -28,11 +27,5 @@ $(function(){
           //クラスを消去
           $("#description").find(".text").removeClass('back_move');
         }
-        //テスト
-        console.log('imgPosの出力 : %s', imgPos);
-        console.log('scrollの出力 : %s', scroll);
-        console.log('windowHeightの出力 : %s', windowHeight);
-        console.log('計算結果の出力s : %s', imgPos + windowHeight * 0.42);
-        console.log('計算結果の出力g : %s', imgPos + windowHeight * 2.8);
     });
 });
