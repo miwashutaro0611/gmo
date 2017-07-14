@@ -7,7 +7,13 @@ html(lang="ja")
     include _head
     include _css
   body
-    block loading
+    #loader-bg
+      #loader
+        .loading
+          span.loading__title LOADING
+          span.loading__circle1
+          span.loading__circle2
+          span.loading__circle3
     #wrap
       block content
     include _script
