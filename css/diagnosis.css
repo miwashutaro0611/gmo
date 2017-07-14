@@ -170,6 +170,10 @@ select {
   font-family: "toroman";
   src: url("../fonts/toroman.ttf") format('woff'), url("../fonts/toroman.ttf") format('truetype');
 }
+@font-face {
+  font-family: "Ionicons";
+  src: url("../css/ionicons.min.css");
+}
 body {
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
@@ -345,12 +349,20 @@ body {
   line-height: 12vh;
 }
 .diagnosis_wrap__item .question__choice .individual_choice {
+  display: flex;
   width: calc(100% - 35%);
   margin-top: 5vh;
   font-size: 3.5vw;
   background-color: #fff;
+  cursor: pointer;
   height: 10vh;
   line-height: 10vh;
+}
+.diagnosis_wrap__item .question__choice .individual_choice .checkbox {
+  width: 50px;
+}
+.diagnosis_wrap__item .question__choice .individual_choice .lever_word {
+  flex: 1;
 }
 .diagnosis_wrap .fixed_conoha {
   position: fixed;

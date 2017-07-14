@@ -29,4 +29,13 @@ $(function(){
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false
   });
+
+
+  // checkboxを複数選択不可に
+  $('.checkbox').on('click', function(){
+    // クリックした要素のname属性を取得し格納
+    var attr_name = $(this).attr('name');
+    $('.checkbox[name="'+attr_name+'"]').prop('checked', false);
+    $(this).prop('checked', true);
+  });
 });

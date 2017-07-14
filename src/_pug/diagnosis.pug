@@ -4,6 +4,7 @@ block vars
   - var key = "diagnosis"
   - var page = pages[key]
 block css
+  link(rel="stylesheet", href='./css/ionicons.min.css')
   link(rel="stylesheet", href='./css/style.css')
   link(rel="stylesheet", href='./css/diagnosis.css')
 block content
@@ -13,78 +14,106 @@ block content
       .question
         .question__query どのような場面で使いますか？
         .question__choice
-          .individual_choice
-            p 個人
-          .individual_choice
-            p 企業
-          .individual_choice
-            p 決めていない
+          label(for="1th_checkbox1").individual_choice
+            input#1th_checkbox1.checkbox(type="checkbox" name="1th_check")
+            span.lever_word 個人
+          label(for="1th_checkbox2").individual_choice
+            input#1th_checkbox2.checkbox(type="checkbox" name="1th_check")
+            span.lever_word 企業
+          label(for="1th_checkbox3").individual_choice
+            input#1th_checkbox3.checkbox(type="checkbox" name="1th_check")
+            span.lever_word 決めていない
     #2th.diagnosis_wrap__item
       .question
         .question__query どのようなことに利用したいですか？
         .question__choice
-          .individual_choice
-            p ブログサイト：個人
-          .individual_choice
-            p 小規模サイト：個人
-          .individual_choice
-            p 大規模サイト：企業
+          label(for="2th_checkbox1").individual_choice
+            input#2th_checkbox1.checkbox(type="checkbox" name="2th_check")
+            span.lever_word 個人
+          label(for="2th_checkbox2").individual_choice
+            input#2th_checkbox2.checkbox(type="checkbox" name="2th_check")
+            span.lever_word 企業
+          label(for="2th_checkbox3").individual_choice
+            input#2th_checkbox3.checkbox(type="checkbox" name="2th_check")
+            span.lever_word 決めていない
     #3th.diagnosis_wrap__item
       .question
         .question__query 容量はどのくらいにしますか？
         .question__choice
-          .individual_choice
-            p ？？？
-          .individual_choice
-            p ？？？
-          .individual_choice
-            p ？？？
+          label(for="3th_checkbox1").individual_choice
+            input#3th_checkbox1.checkbox(type="checkbox" name="3th_check")
+            span.lever_word 個人
+          label(for="3th_checkbox2").individual_choice
+            input#3th_checkbox2.checkbox(type="checkbox" name="3th_check")
+            span.lever_word 企業
+          label(for="3th_checkbox3").individual_choice
+            input#3th_checkbox3.checkbox(type="checkbox" name="3th_check")
+            span.lever_word 決めていない
     #4th.diagnosis_wrap__item
       .question
         .question__query データベースやメールは使いますか？
         .question__choice
-          .individual_choice
-            p 使う
-          .individual_choice
-            p 使わない
-          .individual_choice
-            p 決めていない
+          label(for="4th_checkbox1").individual_choice
+            input#4th_checkbox1.checkbox(type="checkbox" name="4th_check")
+            span.lever_word 個人
+          label(for="4th_checkbox2").individual_choice
+            input#4th_checkbox2.checkbox(type="checkbox" name="4th_check")
+            span.lever_word 企業
+          label(for="4th_checkbox3").individual_choice
+            input#4th_checkbox3.checkbox(type="checkbox" name="4th_check")
+            span.lever_word 決めていない
     #5th.diagnosis_wrap__item
       .question
         .question__query Webサーバは外部に公開しますか？
         .question__choice
-          .individual_choice
-            p 公開する
-          .individual_choice
-            p 公開しない
-          .individual_choice
-            p 公開・非公開の両方(複数サーバ)
+          label(for="5th_checkbox1").individual_choice
+            input#5th_checkbox1.checkbox(type="checkbox" name="5th_check")
+            span.lever_word 個人
+          label(for="5th_checkbox2").individual_choice
+            input#5th_checkbox2.checkbox(type="checkbox" name="5th_check")
+            span.lever_word 企業
+          label(for="5th_checkbox3").individual_choice
+            input#5th_checkbox3.checkbox(type="checkbox" name="5th_check")
+            span.lever_word 決めていない
     #6th.diagnosis_wrap__item
       .question
         .question__query 自動バックアップをConohaで行いますか？
         .question__choice
-          .individual_choice
-            p 行う
-          .individual_choice
-            p 行わない
+          label(for="6th_checkbox1").individual_choice
+            input#6th_checkbox1.checkbox(type="checkbox" name="6th_check")
+            span.lever_word 個人
+          label(for="6th_checkbox2").individual_choice
+            input#6th_checkbox2.checkbox(type="checkbox" name="6th_check")
+            span.lever_word 企業
+          label(for="6th_checkbox3").individual_choice
+            input#6th_checkbox3.checkbox(type="checkbox" name="6th_check")
+            span.lever_word 決めていない
     #7th.diagnosis_wrap__item
       .question
         .question__query 海外にサーバを立てますか？
         .question__choice
-          .individual_choice
-            p 日本
-          .individual_choice
-            p アメリカ
-          .individual_choice
-            p シンガポール
+          label(for="7th_checkbox1").individual_choice
+            input#7th_checkbox1.checkbox(type="checkbox" name="7th_check")
+            span.lever_word 個人
+          label(for="7th_checkbox2").individual_choice
+            input#7th_checkbox2.checkbox(type="checkbox" name="7th_check")
+            span.lever_word 企業
+          label(for="7th_checkbox3").individual_choice
+            input#7th_checkbox3.checkbox(type="checkbox" name="7th_check")
+            span.lever_word 決めていない
     #8th.diagnosis_wrap__item
       .question
         .question__query 使用したいサービスはありますか？
         .question__choice
-          .individual_choice
-            p ある
-          .individual_choice
-            p ない
+          label(for="8th_checkbox1").individual_choice
+            input#8th_checkbox1.checkbox(type="checkbox" name="8th_check")
+            span.lever_word 個人
+          label(for="8th_checkbox2").individual_choice
+            input#8th_checkbox2.checkbox(type="checkbox" name="8th_check")
+            span.lever_word 企業
+          label(for="8th_checkbox3").individual_choice
+            input#8th_checkbox3.checkbox(type="checkbox" name="8th_check")
+            span.lever_word 決めていない
     .fixed_conoha
       img.fixed_conoha__img(src="./img/index/conoha_main.png" alt="固定このは")
   include include/_footer
