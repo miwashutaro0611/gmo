@@ -184,7 +184,7 @@ body
               right -.2em
       .link
         a
-          link_btn:#fff,main_color
+          link_btn #fff,main_color
   .comment
     position absolute
     width 100%
@@ -226,6 +226,7 @@ body
     transform skewY(6deg)
   .title
     position relative
+    z-index 95
     background #021969
     overflow hidden
     width 100%
@@ -245,6 +246,7 @@ body
       contour2 #fff
   .text
     position relative
+    z-index 95
     width 100%
     color #000
     padding 0 15% 15%
@@ -288,11 +290,59 @@ body
       .link
         a
           link_btn:#fff,#021969
-          background-image url(../img/index/external.png)
-          background-repeat no-repeat
-          background-position 96% center
-          background-size 10% auto
+          // &.sindan
+          &.blank
+            background-image url(../img/index/external.png)
+            background-repeat no-repeat
+            background-position 96% center
+            background-size 10% auto
+  .comment
+    position absolute
+    top 0
+    left 5%
+    z-index 90
+    width 90%
+    padding 50% 0 0
+    &_wrap01
+      margin 0
+      //width margin-top margin-right margin-bottom margin-left
+      conoha_wrap 65% 7% 0 1% 5%
+    &_wrap02
+      margin 10% 0 0
+      conoha_wrap 56% 10% 0 1% 12%
+    &_wrap03
+      margin 63% 0 0
+      conoha_wrap 63% 10% 0 1% 5%
+    &_wrap04
+      margin 7% 0 0
+      conoha_wrap 61% 10% 0 1% 5%
+    &_wrap05
+      margin 21% 0 0
+      conoha_wrap 65% 10% 0 1% 5%
+    .right_conoha,.left_conoha
+      img
+        display block
+        width 30%
+      p
+        background #fff
+        font-size 4vw
+        color main_color
+        line-height 1.7
+        border .5vw solid main_color
+        border-radius 10px
+        box-sizing border-box
+        padding 4% 3%
 
+    .right_conoha
+      img
+        float right
+      p
+        float left
+    .left_conoha
+      img
+        float left
+      p
+        float left
 /*****----------------------------------- constitution *****/
 #constitution
   // position relative
@@ -418,10 +468,11 @@ body
       .link
         a
           link_btn:#fff,plan_color
-          background-image url(../img/index/external.png)
-          background-repeat no-repeat
-          background-position 96% center
-          background-size 10% auto
+          &.blank
+            background-image url(../img/index/external.png)
+            background-repeat no-repeat
+            background-position 96% center
+            background-size 10% auto
 /*****----------------------------------- diagnosis *****/
 #diagnosis
   position relative

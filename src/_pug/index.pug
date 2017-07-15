@@ -90,7 +90,7 @@ block content
           | みんなレッツチャレンジ！！
         h4 このはの診断を行う
         p.link
-          a(href='diagnosis.html') 診断SRART
+          a.back_rote(href='diagnosis.html') 診断START
     .comment
       p.comment__hukidashi1.second
         | このはと一緒に
@@ -153,24 +153,24 @@ block content
             p.list_text 全てSSD
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/serv_icon02.png" alt="")
+            p.list_text 大容量
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/serv_icon03.png" alt="")
+            p.list_text VPS
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/serv_icon04.png" alt="")
+            p.list_text ディスク
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/serv_icon05.png" alt="")
+            p.list_text 時間課金
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/serv_icon06.png" alt="")
+            p.list_text SLA
         h4.txC ネットワーク
         ul.cfx
           li
@@ -257,9 +257,43 @@ block content
             p.list_img
               img(src="./img/index/app/serv_icon01.png" alt="")
             p.list_text 全てSSD
-        h4.txC 機能をもっと詳しく見る
+        h4.txC 診断はコチラから
         p.link
-          a(href='http://www.conoha.jp/function/' target="_blank") 機能一覧ページへ
+          a.sindan.back_rote2(href='diagnosis.html') 診断START
+        h4.txC 機能をもっと知りたい人は
+        p.link
+          a.blank.back_window2(href='http://www.conoha.jp/function/' target="_blank") 機能一覧ページへ
+    .comment
+      .comment_wrap01.right_conoha.cfx
+        img(src="./img/index/application_conoha/conoha_sd1.png" ait="")
+        p
+          | どんな機能があるのか
+          br
+          | このはと一緒に見よう♪
+      .comment_wrap02.left_conoha.cfx
+        img(src="./img/index/application_conoha/conoha_sd2.png" ait="")
+        p.txC
+          | Conoha診断室の機能は
+          br
+          | もっと続きます。
+      .comment_wrap03.right_conoha.cfx
+        img(src="./img/index/application_conoha/conoha_sd3.png" ait="")
+        p
+          | こんなにあったら
+          br
+          | 迷っちゃいますよね。。。
+      .comment_wrap04.left_conoha.cfx
+        img(src="./img/index/application_conoha/conoha_sd4.png" ait="")
+        p
+          | サーバの設定でいろいろと
+          br
+          | 考えてしまうあなたに！
+      .comment_wrap05.right_conoha.cfx
+        img(src="./img/index/application_conoha/conoha_sd5.png" ait="")
+        p
+          | Conoha診断室で自分だけの
+          br
+          | プランを見つけましょう♪
   section#constitution
     .title
       h2
@@ -386,9 +420,12 @@ block content
             mark.marker テストテストテストテストテストテスト
           li
             mark.marker テストテストテストテストテスト
-        h4.txC 機能をもっと詳しく見る
+        h4.txC 診断はコチラから
         p.link
-          a(href='https://www.conoha.jp/conoha/pricing/?btn_id=top_mid_pricing' target="_blank") サーバ構築一覧へ
+          a.back_rote(href='diagnosis.html') 診断START
+        h4.txC 構成をもっと詳しく見る
+        p.link
+          a.back_window.blank(href='https://www.conoha.jp/conoha/pricing/?btn_id=top_mid_pricing' target="_blank") サーバ構築一覧へ
   section#diagnosis
     .title
       h2
@@ -413,6 +450,6 @@ block content
       .label.txC
         p
           a(href='diagnosis.html')
-            | Conoha診断
+            | Conoha診断室
             br
-            | スタート
+            | 診断スタート

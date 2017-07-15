@@ -159,10 +159,137 @@ input,
 select {
   vertical-align: middle;
 }
-@media screen and (min-width: 767px) {
-  a:hover {
-    opacity: 0.8;
-  }
+.back_rote {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.back_rote::before,
+.back_rote::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.back_rote::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.back_rote:hover::after {
+  transform: scale(2) rotate(180deg);
+  background: #333;
+}
+.back_rote2 {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.back_rote2::before,
+.back_rote2::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.back_rote2:hover {
+  color: #000 !important;
+}
+.back_rote2::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.back_rote2:hover::after {
+  transform: scale(2) rotate(180deg);
+  background: #ddd;
+}
+.back_rote {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.back_rote::before,
+.back_rote::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.back_rote::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.back_rote:hover::after {
+  transform: scale(2) rotate(180deg);
+  background: #333;
+}
+.back_window {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.back_window::before,
+.back_window::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.back_window::after {
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.back_window:hover::after {
+  top: 0;
+  left: 0;
+  background: #333 url("../img/index/external.png") no-repeat;
+  background-position: 96% center;
+  background-size: 10% auto;
+}
+.back_window2 {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.back_window2::before,
+.back_window2::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.back_window2:hover {
+  color: #000 !important;
+}
+.back_window2::after {
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.back_window2:hover::after {
+  top: 0;
+  left: 0;
+  background: #ddd url("../img/index/external.png") no-repeat;
+  background-position: 96% center;
+  background-size: 10% auto;
 }
 @font-face {
   font-family: "851kktt";
@@ -962,6 +1089,7 @@ body {
 }
 #application .title {
   position: relative;
+  z-index: 95;
   background: #021969;
   overflow: hidden;
   width: 100%;
@@ -982,6 +1110,7 @@ body {
 }
 #application .text {
   position: relative;
+  z-index: 95;
   width: 100%;
   color: #000;
   padding: 0 15% 15%;
@@ -1035,10 +1164,83 @@ body {
   color: #fff;
   background-color: #021969;
   box-sizing: border-box;
+}
+#application .text__inner .link a.blank {
   background-image: url("../img/index/external.png");
   background-repeat: no-repeat;
   background-position: 96% center;
   background-size: 10% auto;
+}
+#application .comment {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: 90;
+  width: 90%;
+  padding: 50% 0 0;
+}
+#application .comment_wrap01 {
+  margin: 0;
+}
+#application .comment_wrap01 p {
+  width: 65%;
+  margin: 7% 0 1% 5%;
+}
+#application .comment_wrap02 {
+  margin: 10% 0 0;
+}
+#application .comment_wrap02 p {
+  width: 56%;
+  margin: 10% 0 1% 12%;
+}
+#application .comment_wrap03 {
+  margin: 63% 0 0;
+}
+#application .comment_wrap03 p {
+  width: 63%;
+  margin: 10% 0 1% 5%;
+}
+#application .comment_wrap04 {
+  margin: 7% 0 0;
+}
+#application .comment_wrap04 p {
+  width: 61%;
+  margin: 10% 0 1% 5%;
+}
+#application .comment_wrap05 {
+  margin: 21% 0 0;
+}
+#application .comment_wrap05 p {
+  width: 65%;
+  margin: 10% 0 1% 5%;
+}
+#application .comment .right_conoha img,
+#application .comment .left_conoha img {
+  display: block;
+  width: 30%;
+}
+#application .comment .right_conoha p,
+#application .comment .left_conoha p {
+  background: #fff;
+  font-size: 4vw;
+  color: #ffa200;
+  line-height: 1.7;
+  border: 0.5vw solid #ffa200;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 4% 3%;
+}
+#application .comment .right_conoha img {
+  float: right;
+}
+#application .comment .right_conoha p {
+  float: left;
+}
+#application .comment .left_conoha img {
+  float: left;
+}
+#application .comment .left_conoha p {
+  float: left;
 }
 /*****----------------------------------- constitution *****/
 #constitution {
@@ -1185,6 +1387,8 @@ body {
   color: #fff;
   background-color: #21b8d7;
   box-sizing: border-box;
+}
+#constitution .text__inner .link a.blank {
   background-image: url("../img/index/external.png");
   background-repeat: no-repeat;
   background-position: 96% center;

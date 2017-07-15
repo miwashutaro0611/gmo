@@ -9,6 +9,7 @@ writer   : Daichi Seki, Miwa Shuntaro
 var width=window.innerWidth;
 
 $(function(){
+  //スクロールしたら
   $(window).scroll(function (){
         //要素の高さ
         var imgPos = $("#description").offset().top;
