@@ -137,3 +137,9 @@ writer    Daichi Seki, Miwa Shuntaro
   background-position: 96% center;
   background-size: 10% auto;
 }
+.bound_balloon {
+  transition: all 0.5s cubic-bezier(0.65, -0.6, 0.295, 1.65);
+}
+.bound_balloon:hover {
+  transform: scale(1.05);
+}
