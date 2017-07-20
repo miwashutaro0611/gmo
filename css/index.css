@@ -297,6 +297,9 @@ select {
 .bound_balloon:hover {
   transform: scale(1.05);
 }
+.change_main_color:hover {
+  color: #ffa200 !important;
+}
 @font-face {
   font-family: "851kktt";
   src: url("../fonts/851H-kktt.ttf") format('woff'), url("../fonts/851H-kktt.ttf") format('truetype');
@@ -413,8 +416,11 @@ textarea.opinion-form {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #071063 url("../img/common/conoha.png") no-repeat 0% 0%;
-  background-size: 45% auto;
+  background-color: #071063;
+  background-image: url("../img/common/conoha.png"), url("../img/common/load_back2.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, center top;
+  background-size: 45% auto, 100% auto;
   z-index: 9998;
 }
 #loader {
@@ -1186,39 +1192,19 @@ body {
   padding: 50% 0 0;
 }
 #application .comment_wrap01 {
-  margin: 0;
-}
-#application .comment_wrap01 p {
-  width: 65%;
-  margin: 7% 0 1% 5%;
-}
-#application .comment_wrap02 {
   margin: 10% 0 0;
 }
-#application .comment_wrap02 p {
-  width: 56%;
-  margin: 10% 0 1% 12%;
+#application .comment_wrap02 {
+  margin: 5% 0 0;
 }
 #application .comment_wrap03 {
-  margin: 63% 0 0;
-}
-#application .comment_wrap03 p {
-  width: 63%;
-  margin: 10% 0 1% 5%;
+  margin: 59% 0 0;
 }
 #application .comment_wrap04 {
   margin: 7% 0 0;
 }
-#application .comment_wrap04 p {
-  width: 61%;
-  margin: 10% 0 1% 5%;
-}
 #application .comment_wrap05 {
   margin: 21% 0 0;
-}
-#application .comment_wrap05 p {
-  width: 65%;
-  margin: 10% 0 1% 5%;
 }
 #application .comment .right_conoha img,
 #application .comment .left_conoha img {
@@ -1239,13 +1225,7 @@ body {
 #application .comment .right_conoha img {
   float: right;
 }
-#application .comment .right_conoha p {
-  float: left;
-}
 #application .comment .left_conoha img {
-  float: left;
-}
-#application .comment .left_conoha p {
   float: left;
 }
 /*****----------------------------------- constitution *****/
@@ -1403,6 +1383,46 @@ body {
   background-position: 96% center;
   background-size: 10% auto;
 }
+#constitution .text .back_wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#constitution .text .back_wrap div {
+  position: relative;
+}
+#constitution .text .back_wrap div.sd_image01 {
+  margin: 58% 0 0 70%;
+}
+#constitution .text .back_wrap div.sd_image01 img {
+  width: 70%;
+}
+#constitution .text .back_wrap div.sd_image02 {
+  margin: 10% 0 0 5%;
+}
+#constitution .text .back_wrap div.sd_image02 img {
+  width: 22%;
+}
+#constitution .text .back_wrap div.sd_image03 {
+  margin: 30% 0 0 65%;
+}
+#constitution .text .back_wrap div.sd_image03 img {
+  width: 65%;
+}
+#constitution .text .back_wrap div.sd_image04 {
+  margin: 55% 0 0 12%;
+}
+#constitution .text .back_wrap div.sd_image04 img {
+  width: 25%;
+}
+#constitution .text .back_wrap div.sd_image05 {
+  margin: 21% 0 0 67%;
+}
+#constitution .text .back_wrap div.sd_image05 img {
+  width: 73%;
+}
 /*****----------------------------------- diagnosis *****/
 #diagnosis {
   position: relative;
@@ -1489,7 +1509,9 @@ body {
   background: url("../img/index/balloon/balloon3.png") no-repeat center;
   background-size: 100% auto;
   box-sizing: border-box;
-  font-size: 4vw;
+  font-size: 4.7vw;
+  font-weight: bold;
+  font-family: "851kktt";
   line-height: 1.7;
   color: #000;
 }

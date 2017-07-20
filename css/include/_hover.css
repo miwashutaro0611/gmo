@@ -143,3 +143,6 @@ writer    Daichi Seki, Miwa Shuntaro
 .bound_balloon:hover {
   transform: scale(1.05);
 }
+.change_main_color:hover {
+  color: main_color !important;
+}

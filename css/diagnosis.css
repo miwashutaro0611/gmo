@@ -295,6 +295,9 @@ select {
 .bound_balloon:hover {
   transform: scale(1.05);
 }
+.change_main_color:hover {
+  color: #ffa200 !important;
+}
 @font-face {
   font-family: "851kktt";
   src: url("../fonts/851H-kktt.ttf") format('woff'), url("../fonts/851H-kktt.ttf") format('truetype');
@@ -411,8 +414,11 @@ textarea.opinion-form {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #071063 url("../img/common/conoha.png") no-repeat 0% 0%;
-  background-size: 45% auto;
+  background-color: #071063;
+  background-image: url("../img/common/conoha.png"), url("../img/common/load_back2.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, center top;
+  background-size: 45% auto, 100% auto;
   z-index: 9998;
 }
 #loader {
