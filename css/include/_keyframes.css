@@ -146,6 +146,62 @@ writer   : Daichi Seki, Miwa Shuntaro
     background-position: -85% 30%;
   }
 }
+@-moz-keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+@-webkit-keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+@-o-keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+@keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
 @-moz-keyframes rotation {
   from {
     transform: rotate(0deg);

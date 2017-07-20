@@ -5,6 +5,7 @@ writer   : Daichi Seki, Miwa Shuntaro
 -- トップページstylの記入
 ---------------------------------------- */
 @import "include/_import.styl";
+@import "include/_loading__animetion";
 
 body
   font-size 14px
@@ -29,19 +30,24 @@ body
       height 11vw
       background-color #fff
       transform skewY(-6deg)
-    h1
-      padding 5% 8% 3% 8%
-      font-size 3.6vw
-      color #fff
-      line-height 1.6
-      span
-        font-size 6vw
+    .h1_wrap
+      width 74%
+      height 28vw
+      padding 5% 8% 0%
+      box-sizing border-box
+      h1
+        font-size 3.6vw
+        color #fff
+        line-height 1.6
+        &.main
+          font-size 6vw
     &__image
       position absolute
-      width:45%
+      width 45%
       top 2%
-      right 1%
+      right -45%
       z-index 100
+      opacity 0
     .diagnosis_start
       position relative
       display block
@@ -50,6 +56,8 @@ body
       left 8%
       width 30vw
       height 30vw
+      opacity 0
+      transform translateY(60px)
       .circle
         display table
         width 100%
@@ -125,7 +133,7 @@ body
     box-sizing border-box
     overflow hidden
     &.back_move
-      background-position -20% 30%
+      background-position -85% 30%
       animation back_image_move 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000)
     &.back_remove
       background-position -85% 30%

@@ -30,6 +30,11 @@ writer   : Daichi Seki, Miwa Shuntaro
   color: #fff;
   z-index: 9999;
 }
+.start_btn_active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  animation: start_btn_active 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .loading {
   position: relative;
   width: 15vw;
