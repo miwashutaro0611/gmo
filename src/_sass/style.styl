@@ -8,6 +8,7 @@ writer   : Daichi Seki, Miwa Shuntaro
 
 body
   font-size 14px
+  font-family "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif"
 
 /*****----------------------------------- header共有部分 *****/
 
@@ -26,6 +27,8 @@ body
       text-align center
       font-size 2.2em
       font-weight bold
+      font-family "toroman"
+      letter-spacing .2em
       color #fff
   &__nav
     margin 10px 0
@@ -44,12 +47,14 @@ body
         height 100%
         margin 0 35px 0 0
         background-color main_color
+        box-shadow: 5px 5px 5px #fff;
         transition 1s
         &:hover
           cursor pointer
         &.active
           flex 2.5
           background-color #4585e6
+          box-shadow: 5px 5px 5px rgba(#999,.8);
           &::after
             border-top 35px solid #4585e6
 

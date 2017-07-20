@@ -745,6 +745,7 @@ textarea.opinion-form {
 }
 body {
   font-size: 14px;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
 }
 /*****----------------------------------- header共有部分 *****/
 .global_header {
@@ -764,6 +765,8 @@ body {
   text-align: center;
   font-size: 2.2em;
   font-weight: bold;
+  font-family: "toroman";
+  letter-spacing: 0.2em;
   color: #fff;
 }
 .global_header__nav {
@@ -785,6 +788,7 @@ body {
   height: 100%;
   margin: 0 35px 0 0;
   background-color: #ffa200;
+  box-shadow: 5px 5px 5px #fff;
   transition: 1s;
 }
 .global_header__nav .question_list__item:hover {
@@ -793,6 +797,7 @@ body {
 .global_header__nav .question_list__item.active {
   flex: 2.5;
   background-color: #4585e6;
+  box-shadow: 5px 5px 5px rgba(153,153,153,0.8);
 }
 .global_header__nav .question_list__item.active::after {
   border-top: 35px solid #4585e6;

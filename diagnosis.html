@@ -14,11 +14,6 @@
     <link rel="stylesheet" href="./css/diagnosis.css">
   </head>
   <body>
-    <div id="loader-bg">
-      <div id="loader">
-        <div class="loading"><span class="loading__title">LOADING</span><span class="loading__circle1"></span><span class="loading__circle2"></span><span class="loading__circle3"></span></div>
-      </div>
-    </div>
     <div id="wrap">
       <header class="global_header">
         <h1 class="global_header__h1"><a class="global_header__h1--link" href="./">CONOHA<br>SINDAN ROOM</a></h1>
@@ -38,7 +33,7 @@
       <section class="diagnosis_wrap">
         <div class="diagnosis_wrap__item" id="1th">
           <div class="question">
-            <div class="question__query">どのような場面で使いますか？</div>
+            <div class="question__query"><span class="question_number">Q1</span><span class="question_text">どのような場面で使いますか？</span></div>
             <div class="question__choice">
               <label class="individual_choice" for="1th_checkbox1">
                 <input class="checkbox" id="1th_checkbox1" type="checkbox" name="1th_check"><span class="lever_word">個人</span>
@@ -54,7 +49,7 @@
         </div>
         <div class="diagnosis_wrap__item" id="2th">
           <div class="question">
-            <div class="question__query">どのようなことに利用したいですか？</div>
+            <div class="question__query"><span class="question_number">Q2</span><span class="question_text">どのようなことに利用したいですか？</span></div>
             <div class="question__choice">
               <label class="individual_choice" for="2th_checkbox1">
                 <input class="checkbox" id="2th_checkbox1" type="checkbox" name="2th_check"><span class="lever_word">個人</span>
@@ -70,7 +65,7 @@
         </div>
         <div class="diagnosis_wrap__item" id="3th">
           <div class="question">
-            <div class="question__query">容量はどのくらいにしますか？</div>
+            <div class="question__query"><span class="question_number">Q3</span><span class="question_text">容量はどのくらいにしますか？</span></div>
             <div class="question__choice">
               <label class="individual_choice" for="3th_checkbox1">
                 <input class="checkbox" id="3th_checkbox1" type="checkbox" name="3th_check"><span class="lever_word">個人</span>
@@ -86,7 +81,7 @@
         </div>
         <div class="diagnosis_wrap__item" id="4th">
           <div class="question">
-            <div class="question__query">データベースやメールは使いますか？</div>
+            <div class="question__query"><span class="question_number">Q4</span><span class="question_text">データベースやメールは使いますか？</span></div>
             <div class="question__choice">
               <label class="individual_choice" for="4th_checkbox1">
                 <input class="checkbox" id="4th_checkbox1" type="checkbox" name="4th_check"><span class="lever_word">個人</span>
@@ -102,7 +97,7 @@
         </div>
         <div class="diagnosis_wrap__item" id="5th">
           <div class="question">
-            <div class="question__query">Webサーバは外部に公開しますか？</div>
+            <div class="question__query"><span class="question_number">Q5</span><span class="question_text">Webサーバは外部に公開しますか？</span></div>
             <div class="question__choice">
               <label class="individual_choice" for="5th_checkbox1">
                 <input class="checkbox" id="5th_checkbox1" type="checkbox" name="5th_check"><span class="lever_word">個人</span>
@@ -118,7 +113,7 @@
         </div>
         <div class="diagnosis_wrap__item" id="6th">
           <div class="question">
-            <div class="question__query">自動バックアップをConohaで行いますか？</div>
+            <div class="question__query"><span class="question_number">Q6</span><span class="question_text">自動バックアップをConohaで行いますか？</span></div>
             <div class="question__choice">
               <label class="individual_choice" for="6th_checkbox1">
                 <input class="checkbox" id="6th_checkbox1" type="checkbox" name="6th_check"><span class="lever_word">個人</span>
@@ -134,7 +129,7 @@
         </div>
         <div class="diagnosis_wrap__item" id="7th">
           <div class="question">
-            <div class="question__query">海外にサーバを立てますか？</div>
+            <div class="question__query"><span class="question_number">Q7</span><span class="question_text">海外にサーバを立てますか？</span></div>
             <div class="question__choice">
               <label class="individual_choice" for="7th_checkbox1">
                 <input class="checkbox" id="7th_checkbox1" type="checkbox" name="7th_check"><span class="lever_word">個人</span>
@@ -150,11 +145,10 @@
         </div>
         <div class="diagnosis_wrap__item" id="8th">
           <div class="question">
-            <div class="question__query">使用したいサービスはありますか？</div>
+            <div class="question__query"><span class="question_number">Q8</span><span class="question_text">使用したいサービスはありますか？</span></div>
             <div class="question__choice">
-              <label class="individual_choice" for="8th_checkbox1">
-                <input class="checkbox" id="8th_checkbox1" type="checkbox" name="8th_check"><span class="lever_word">個人</span>
-              </label>
+              <label class="individual_choice" for="8th_checkbox1"><span class="checkbox_wrap">
+                  <input class="checkbox" id="8th_checkbox1" type="checkbox" name="8th_check"></span><span class="lever_word">個人</span></label>
               <label class="individual_choice" for="8th_checkbox2">
                 <input class="checkbox" id="8th_checkbox2" type="checkbox" name="8th_check"><span class="lever_word">企業</span>
               </label>
@@ -169,7 +163,6 @@
       <footer>ふったー</footer>
     </div>
     <script src="./js/jquery.js"></script>
-    <script src="./js/libs/loading.js"></script>
     <script src="./js/plugin/easing.js"></script>
     <script src="./js/main.js"></script>
   </body>
