@@ -29,4 +29,50 @@ $(function(){
           $("#description").find(".text").removeClass('back_move');
         }
     });
+    //スクロールアニメーション1
+    $('.list-mv').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    	if(isInView){
+    		$(this).stop().addClass('mv');
+    	}
+    });
+    //スクロールアニメーション2
+    $('.buruburu_start').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    	if(isInView){
+    		$(this).stop().addClass('buruburu');
+    	}else{
+        $(this).removeClass('buruburu');
+      }
+    });
+    //スクロールアニメーション3
+    $('.enlargeme_start').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    	if(isInView){
+    		$(this).stop().addClass('enlargeme');
+    	}else{
+        $(this).removeClass('enlargeme');
+      }
+    });
+    //スクロールアニメーション4
+    $('.conoha_down_start').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    	if(isInView){
+    		$(this).stop().addClass('conoha_down');
+    	}else{
+        $(this).removeClass('conoha_down');
+      }
+    });
+    //スクロールアニメーション5
+    $('.yurayura_start').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    	if(isInView){
+    		$(this).stop().addClass('yurayura');
+    	}else{
+        $(this).removeClass('yurayura');
+      }
+    });
+    //スクロールアニメーション6
+    $('.conoha_up_start').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    	if(isInView){
+    		$(this).stop().addClass('conoha_up');
+    	}else{
+        $(this).removeClass('conoha_up');
+      }
+    });
 });
