@@ -141,5 +141,8 @@ writer    Daichi Seki, Miwa Shuntaro
   transition: all 0.5s cubic-bezier(0.65, -0.6, 0.295, 1.65);
 }
 .bound_balloon:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
+}
+.change_main_color:hover {
+  color: main_color !important;
 }

@@ -7,16 +7,22 @@ block css
   link(rel="stylesheet", href='./css/index.css')
 block js
   script(src="./js/index.js")
+  script(src="./js/libs/loading.js")
+block top_loading
+  #loader-bg
+    #loader
+      .loading
+        span.loading__title LOADING
+        span.loading__circle1
+        span.loading__circle2
+        span.loading__circle3
 block content
   section.header_wrapp
     header.header
-      h1
-        | あなたにピッタリなVPSサービスを
-        br
-        | このはと一緒に考える
-        br
-        span 「Conoha診断室」
-      a.diagnosis_start(href='diagnosis.html')
+      .h1_wrap
+        h1#typing1 あなたにピッタリなVPSサービスをこのはと一緒に考える
+        h1#typing2.main 「Conoha診断室」
+      a.diagnosis_start.bound_balloon(href='diagnosis.html')
         .circle
           .circle__word
             | 今すぐ診断
@@ -149,114 +155,114 @@ block content
         ul.cfx
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
+              img(src="./img/index/app/serv_icon01.png" alt="SSD")
             p.list_text 全てSSD
           li
             p.list_img
-              img(src="./img/index/app/serv_icon02.png" alt="")
+              img(src="./img/index/app/serv_icon02.png" alt="オブジェクトストレージ")
             p.list_text 大容量
           li
             p.list_img
-              img(src="./img/index/app/serv_icon03.png" alt="")
+              img(src="./img/index/app/serv_icon03.png" alt="VPS")
             p.list_text VPS
           li
             p.list_img
-              img(src="./img/index/app/serv_icon04.png" alt="")
+              img(src="./img/index/app/serv_icon04.png" alt="追加ディスク")
             p.list_text ディスク
           li
             p.list_img
-              img(src="./img/index/app/serv_icon05.png" alt="")
+              img(src="./img/index/app/serv_icon05.png" alt="時間課金")
             p.list_text 時間課金
           li
             p.list_img
-              img(src="./img/index/app/serv_icon06.png" alt="")
+              img(src="./img/index/app/serv_icon06.png" alt="SLA")
             p.list_text SLA
         h4.txC ネットワーク
         ul.cfx
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/net_icon01.png" alt="転送量課金なし")
+            p.list_text 課金なし
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/net_icon02.png" alt="プライベートネットワーク")
+            p.list_text 公開設定
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/net_icon03.png" alt="ロードバランサー")
+            p.list_text 複数台VPS
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/net_icon04.png" alt="追加IP")
+            p.list_text 追加IP
         h4.txC テンプレート
         ul.cfx
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/tmp_icon01.png" alt="イメージ保存")
+            p.list_text 保存
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/tmp_icon02.png" alt="DBサーバ")
+            p.list_text DB
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/tmp_icon03.png" alt="メールサーバ")
+            p.list_text メール
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/tmp_icon04.png" alt="テンプレート")
+            p.list_text OS
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/tmp_icon05.png" alt="自動バックアップ")
+            p.list_text 自動
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/tmp_icon06.png" alt="Wordpress")
+            p.list_text 仮想マシン
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/tmp_icon07.png" alt="スケールアウト")
+            p.list_text スケール
         h4.txC セキュリティー
         ul.cfx
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/sec_icon01.png" alt="SSH key")
+            p.list_text SSH key
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/sec_icon02.png" alt="2段階認証")
+            p.list_text 認証
         h4.txC サーバ操作
         ul.cfx
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/ctr_icon01.png" alt="API")
+            p.list_text API
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/ctr_icon02.png" alt="コントロールパネル")
+            p.list_text パネル
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/ctr_icon03.png" alt="コンソール")
+            p.list_text コンソール
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/ctr_icon04.png" alt="このはモード")
+            p.list_text このは
         h4.txC サポート
         ul.cfx
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/sap_icon01.png" alt="サポート")
+            p.list_text サポート
           li
             p.list_img
-              img(src="./img/index/app/serv_icon01.png" alt="")
-            p.list_text 全てSSD
+              img(src="./img/index/app/sap_icon02.png" alt="Conohaチャージ")
+            p.list_text チャージ
         h4.txC 診断はコチラから
         p.link
           a.sindan.back_rote2(href='diagnosis.html') 診断START
@@ -266,34 +272,14 @@ block content
     .comment
       .comment_wrap01.right_conoha.cfx
         img(src="./img/index/application_conoha/conoha_sd1.png" ait="")
-        p
-          | どんな機能があるのか
-          br
-          | このはと一緒に見よう♪
       .comment_wrap02.left_conoha.cfx
         img(src="./img/index/application_conoha/conoha_sd2.png" ait="")
-        p.txC
-          | Conoha診断室の機能は
-          br
-          | もっと続きます。
       .comment_wrap03.right_conoha.cfx
         img(src="./img/index/application_conoha/conoha_sd3.png" ait="")
-        p
-          | こんなにあったら
-          br
-          | 迷っちゃいますよね。。。
       .comment_wrap04.left_conoha.cfx
         img(src="./img/index/application_conoha/conoha_sd4.png" ait="")
-        p
-          | サーバの設定でいろいろと
-          br
-          | 考えてしまうあなたに！
       .comment_wrap05.right_conoha.cfx
         img(src="./img/index/application_conoha/conoha_sd5.png" ait="")
-        p
-          | Conoha診断室で自分だけの
-          br
-          | プランを見つけましょう♪
   section#constitution
     .title
       h2
@@ -426,6 +412,18 @@ block content
         h4.txC 構成をもっと詳しく見る
         p.link
           a.back_window.blank(href='https://www.conoha.jp/conoha/pricing/?btn_id=top_mid_pricing' target="_blank") サーバ構築一覧へ
+      .back_wrap
+        .sd_image01
+          img(src="./img/index/stmp/conoha_stmp01.png" alt="このはちゃんlineスタンプイラスト")
+        .sd_image02
+          img(src="./img/index/stmp/conoha_stmp02.png" alt="このはちゃんlineスタンプイラスト")
+        .sd_image03
+          img(src="./img/index/stmp/conoha_stmp03.png" alt="このはちゃんlineスタンプイラスト")
+        .sd_image04
+          img(src="./img/index/stmp/conoha_stmp04.png" alt="このはちゃんlineスタンプイラスト")
+        .sd_image05
+          img(src="./img/index/stmp/conoha_stmp05.png" alt="このはちゃんlineスタンプイラスト")
+
   section#diagnosis
     .title
       h2
@@ -449,7 +447,7 @@ block content
           | 一緒に考えましょう♪
       .label.txC
         p
-          a.bound_balloon(href='diagnosis.html')
+          a.bound_balloon.change_main_color(href='diagnosis.html')
             | Conoha診断室
             br
             | 診断スタート

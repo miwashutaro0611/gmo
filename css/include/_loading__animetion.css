@@ -11,8 +11,11 @@ writer   : Daichi Seki, Miwa Shuntaro
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #071063 url("../img/common/conoha.png") no-repeat 0% 0%;
-  background-size: 45% auto;
+  background-color: #071063;
+  background-image: url("../img/common/conoha.png"), url("../img/common/load_back2.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, center top;
+  background-size: 45% auto, 100% auto;
   z-index: 9998;
 }
 #loader {
@@ -26,6 +29,11 @@ writer   : Daichi Seki, Miwa Shuntaro
   text-align: center;
   color: #fff;
   z-index: 9999;
+}
+.start_btn_active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  animation: start_btn_active 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .loading {
   position: relative;

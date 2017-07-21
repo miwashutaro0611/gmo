@@ -293,7 +293,10 @@ select {
   transition: all 0.5s cubic-bezier(0.65, -0.6, 0.295, 1.65);
 }
 .bound_balloon:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
+}
+.change_main_color:hover {
+  color: #ffa200 !important;
 }
 @font-face {
   font-family: "851kktt";
@@ -404,78 +407,6 @@ textarea.opinion-form {
   .sp-indisplay {
     display: inline-block;
   }
-}
-#loader-bg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: #071063 url("../img/common/conoha.png") no-repeat 0% 0%;
-  background-size: 45% auto;
-  z-index: 9998;
-}
-#loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 15vw;
-  height: 15vw;
-  margin-top: -100px;
-  margin-left: -100px;
-  text-align: center;
-  color: #fff;
-  z-index: 9999;
-}
-.loading {
-  position: relative;
-  width: 15vw;
-  height: 15vw;
-}
-.loading::after {
-  border-radius: 40%;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #e8a, rgba(250,238,255,0.3) 90%, rgba(230,238,255,0.5));
-  animation: color-fade 3s infinite linear;
-}
-.loading__circle1,
-.loading__circle2,
-.loading__circle3 {
-  opacity: 0.4;
-  position: absolute;
-  left: 0;
-  background: #0af;
-  width: 15vw;
-  height: 15vw;
-  transform-origin: 50% 47%;
-  border-radius: 40%;
-  animation: rotation 3s infinite linear;
-}
-.loading__circle2 {
-  opacity: 0.2;
-  background: #ff0;
-  animation: rotation 5s infinite linear;
-}
-.loading__circle3 {
-  animation: rotation 2.5s infinite linear;
-}
-.loading__title {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  font-family: toroman;
-  color: #fff;
-  text-align: center;
-  font-size: 2vw;
-  line-height: 2rem;
-  letter-spacing: 0.15em;
-  animation: text-fade 300ms infinite linear;
-  text-shadow: #ffa200 0.15vw 0.15vw 0px, #ffa200 -0.15vw 0.15vw 0px, #ffa200 0.15vw -0.15vw 0px, #ffa200 -0.15vw -0.15vw 0px, #ffa200 0vw 0.2vw 0px, #ffa200 -0.2vw 0vw 0px, #ffa200 0.2vw 0vw 0px, #ffa200 0vw -0.2vw 0px;
 }
 @-moz-keyframes fadeIn {
   0% {
@@ -619,6 +550,62 @@ textarea.opinion-form {
   }
   100% {
     background-position: -85% 30%;
+  }
+}
+@-moz-keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+@-webkit-keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+@-o-keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+@keyframes start_btn_active {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  1% {
+    opacity: 0 !important;
+    transform: translateY(60px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
 }
 @-moz-keyframes rotation {
