@@ -781,6 +781,22 @@ body {
   color: #555;
   background: linear-gradient(transparent 65%, #ffbf7f 35%);
 }
+.diagnosis_wrap__item .question__choice {
+  position: relative;
+/*
+        .overlay_border
+          position absolute
+          z-index 999
+          width calc(100% - 35%)
+          height 10vh
+          opacity 0
+          box-shadow:0px 0px 0px 5px #fff inset,0px 0px 0px 8px #fff inset;
+          transition .2s
+          &:hover
+            opacity 1
+            box-shadow:0px 0px 0px 5px #fff inset,0px 0px 0px 8px #ffbf7f inset;
+        */
+}
 .diagnosis_wrap__item .question__choice .individual_choice {
   display: flex;
   width: calc(100% - 35%);
@@ -790,25 +806,46 @@ body {
   color: #555;
   background-color: #fff;
   cursor: pointer;
-  transition: 0.2s background-color;
+  transition: 0.2s;
   box-shadow: 3px 3px 3px #ccc;
   height: 10vh;
   line-height: 10vh;
 }
 .diagnosis_wrap__item .question__choice .individual_choice:hover {
-  background-color: rgba(255,162,0,0.5);
+  box-shadow: 6px 6px 3px #aaa;
 }
-.diagnosis_wrap__item .question__choice .individual_choice span.checkbox_wrap {
-  width: 10vh;
-  height: 100%;
-  text-align: center;
-  background-color: #ffbf7f;
+.diagnosis_wrap__item .question__choice .individual_choice .checkbox {
+  display: none;
 }
-.diagnosis_wrap__item .question__choice .individual_choice span.checkbox_wrap .checkbox {
-  background-color: #ffbf7f;
+.diagnosis_wrap__item .question__choice .individual_choice .checkbox:checked + .lever_word::after {
+  content: "";
+  position: absolute;
+  top: 2.2vh;
+  left: 3.5vh;
+  width: 4.8vh;
+  height: 2.3vh;
+  border-left: 0.8vh solid #ffbf7f;
+  border-bottom: 1vh solid #ffbf7f;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .diagnosis_wrap__item .question__choice .individual_choice .lever_word {
   flex: 1;
+  position: relative;
+  padding-left: 10vh;
+  box-sizing: border-box;
+}
+.diagnosis_wrap__item .question__choice .individual_choice .lever_word::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2vh;
+  left: 2.4vh;
+  width: 5vh;
+  height: 5vh;
+  border: 6px solid #ffbf7f;
+  border-radius: 4px;
 }
 .diagnosis_wrap .fixed_conoha {
   position: fixed;
