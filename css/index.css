@@ -1046,6 +1046,7 @@ textarea.opinion-form {
 }
 body {
   font-size: 14px;
+  min-width: 1000px;
 }
 /*****-----------------------------------*****/
 .list-mv {
@@ -1219,11 +1220,10 @@ body {
   overflow: hidden;
 }
 #description .text.back_move {
-  background-position: -85% 30%;
   animation: back_image_move 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-position: -20% 30%;
 }
 #description .text.back_remove {
-  background-position: -85% 30%;
   animation: back_image_remove 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #description .text__inner {
