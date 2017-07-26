@@ -56,9 +56,24 @@ $(function(){
     var count = checkedBoxCount();
     checkedBoxCountDisp(count);
   });
+
+
+  /* -------------------------------------------------- */
+  // 残りの診断問数を表示する領域をクリックした際
+  $(document).on('click', '.checked_count', function(){
+    var count = checkedBoxCount();
+    if(count == 8){
+      // セッションストレージへ格納
+      var setFlag = setSessionStorage();
+      //window.location.href = '/result.html';
+    }else{
+      alert("全て選ばれていませんご！！！！")
+    }
+  });
 });
 // onload以上
 /* -------------------------------------------------- */
+
 
 
 /* -------------------------------------------------- */
@@ -155,4 +170,17 @@ function moveHeaderConoha(index){
   $(".question_list").find('li.question_list__item img.image').removeClass('active');
   // クリックした要素にこのはちゃんを表示
   $("a[href='#"+index+"th']").find('img.image').addClass('active');
+}
+
+
+/* -------------------------------------------------- */
+// 選択した選択肢の内容をローカルストレージに格納
+function setSessionStorage(){
+  var sessionArr = new Array();
+  var loopCount = 1;
+  $("div.diagnosis_wrap__item").each(function(){
+    var value = $(this).find('.question__choice input[name="'+loopCount+'th_check"]:checked').val();
+    console.log(loopCount+"は"+value);
+    loopCount++;
+  });
 }
