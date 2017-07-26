@@ -19,7 +19,6 @@ body
     height calc(100vh - 200px)
     .question
       width 100%
-      height 100vh
       padding 5% 8%
       box-sizing border-box
       &__query
@@ -116,20 +115,44 @@ body
     right 3vh
     bottom 3vh
     width 30vh
-    height 30vh
+    min-width 320px
+    min-height 320px
+    border 10px solid #fff
     border-radius 50%
     text-align center
     background-color #ffbf7f
     color #fff
     animation fadeIn .2s ease
+    middle-line(30vh)
+    &:hover
+      background-color main_color
+      cursor pointer
     .num
       position absolute
       z-index 101
-      top 0
+      top 2vh
       right 0
       bottom 0
-      left 0
+      left -10vh
       margin auto
+      font-size 140px
+      font-weight bold
+      &::before
+        content 'あと残り'
+        position absolute
+        top -9vh
+        right 0
+        bottom 0
+        left 10vh
+        z-index 101
+        font-size 50px
+        font-weight normal
+      &::after
+        content '問！'
+        position absolute
+        z-index 101
+        font-size 60px
+        font-weight bold
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
 @media screen and (max-width: 999px)

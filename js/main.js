@@ -101,9 +101,9 @@ function checkedBoxCountDisp(count){
     return false;
   }else{
     if($('.checked_count').length !== 0){
-      $('.checked_count').text(8-count);
+      $('.checked_count .num').text(8-count);
     }else{
-      var str = '<div class="checked_count"><span class="num">あと残り<br>'+(8-count)+'問！</span></div>';
+      var str = '<div class="checked_count bound_balloon"><span class="num">'+(8-count)+'</span></div>';
       $('.diagnosis_wrap').append(str);
     }
   }

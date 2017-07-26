@@ -978,7 +978,6 @@ body {
 }
 .diagnosis_wrap__item .question {
   width: 100%;
-  height: 100vh;
   padding: 5% 8%;
   box-sizing: border-box;
 }
@@ -1090,21 +1089,49 @@ body {
   right: 3vh;
   bottom: 3vh;
   width: 30vh;
-  height: 30vh;
+  min-width: 320px;
+  min-height: 320px;
+  border: 10px solid #fff;
   border-radius: 50%;
   text-align: center;
   background-color: #ffbf7f;
   color: #fff;
   animation: fadeIn 0.2s ease;
+  height: 30vh;
+  line-height: 30vh;
+}
+.diagnosis_wrap .checked_count:hover {
+  background-color: #ffa200;
+  cursor: pointer;
 }
 .diagnosis_wrap .checked_count .num {
   position: absolute;
   z-index: 101;
-  top: 0;
+  top: 2vh;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -10vh;
   margin: auto;
+  font-size: 140px;
+  font-weight: bold;
+}
+.diagnosis_wrap .checked_count .num::before {
+  content: 'あと残り';
+  position: absolute;
+  top: -9vh;
+  right: 0;
+  bottom: 0;
+  left: 10vh;
+  z-index: 101;
+  font-size: 50px;
+  font-weight: normal;
+}
+.diagnosis_wrap .checked_count .num::after {
+  content: '問！';
+  position: absolute;
+  z-index: 101;
+  font-size: 60px;
+  font-weight: bold;
 }
 /*****-----------------------------------*****/
 @media screen and (max-width: 999px) {
