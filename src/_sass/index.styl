@@ -11,6 +11,34 @@ body
   font-size 14px
 
 /*****-----------------------------------*****/
+.list-mv
+  position relative
+  opacity 0
+  transform translateY(60px)
+  transition 1s
+  transition-delay .2
+
+.mv
+  opacity 1.0
+  transform translate(0, 0)
+.buruburu
+  display inline-block
+  animation hurueru .15s 7
+  animation-delay .5
+.enlargeme
+  display inline-block
+  animation enlargeme 1.8s
+  animation-delay .5
+.yurayura
+  animation yurayura 1.5s
+  animation-delay .5
+.conoha_up
+  animation conoha_up 2.2s cubic-bezier(0.785, 0.005, 0.000, 1.000)
+  animation-delay .5
+.conoha_down
+  animation conoha_down .8s cubic-bezier(0.680, -0.550, 0.265, 1.550)
+  animation-delay .5
+/*****-----------------------------------*****/
 .header_wrapp
   position relative
   .header
@@ -133,10 +161,9 @@ body
     box-sizing border-box
     overflow hidden
     &.back_move
-      background-position -85% 30%
       animation back_image_move 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000)
+      background-position -20% 30%
     &.back_remove
-      background-position -85% 30%
       animation back_image_remove 1s cubic-bezier(0.075, 0.820, 0.165, 1.000)
     &__inner
       position relative
@@ -262,7 +289,7 @@ body
     overflow hidden
     &__inner
       margin 5% 0 0
-      padding 5%
+      padding 5% 5% 12%
       background rgba(#fff, 0.6)
       h3
         font-size 6vw
@@ -300,6 +327,7 @@ body
           link_btn:#fff,#021969
           // &.sindan
           &.blank
+            link_btn:#fff,#ddd
             background-image url(../img/index/external.png)
             background-repeat no-repeat
             background-position 96% center
@@ -378,7 +406,7 @@ body
     overflow hidden
     &__inner
       margin 5% 0 0
-      padding 5%
+      padding 5% 5% 12%
       background rgba(#000, 0.6)
       h3
         font-size 6vw
@@ -471,6 +499,7 @@ body
         a
           link_btn:#fff,plan_color
           &.blank
+            link_btn:#fff,#333
             background-image url(../img/index/external.png)
             background-repeat no-repeat
             background-position 96% center

@@ -6,6 +6,7 @@ block vars
 block css
   link(rel="stylesheet", href='./css/index.css')
 block js
+  script(src="./js/plugin/inview.js")
   script(src="./js/index.js")
   script(src="./js/libs/loading.js")
 block top_loading
@@ -270,15 +271,15 @@ block content
         p.link
           a.blank.back_window2(href='http://www.conoha.jp/function/' target="_blank") 機能一覧ページへ
     .comment
-      .comment_wrap01.right_conoha.cfx
+      .comment_wrap01.right_conoha.cfx.list-mv
         img(src="./img/index/application_conoha/conoha_sd1.png" ait="")
-      .comment_wrap02.left_conoha.cfx
+      .comment_wrap02.left_conoha.cfx.list-mv
         img(src="./img/index/application_conoha/conoha_sd2.png" ait="")
-      .comment_wrap03.right_conoha.cfx
+      .comment_wrap03.right_conoha.cfx.list-mv
         img(src="./img/index/application_conoha/conoha_sd3.png" ait="")
-      .comment_wrap04.left_conoha.cfx
+      .comment_wrap04.left_conoha.cfx.list-mv
         img(src="./img/index/application_conoha/conoha_sd4.png" ait="")
-      .comment_wrap05.right_conoha.cfx
+      .comment_wrap05.right_conoha.cfx.list-mv
         img(src="./img/index/application_conoha/conoha_sd5.png" ait="")
   section#constitution
     .title
@@ -414,15 +415,15 @@ block content
           a.back_window.blank(href='https://www.conoha.jp/conoha/pricing/?btn_id=top_mid_pricing' target="_blank") サーバ構築一覧へ
       .back_wrap
         .sd_image01
-          img(src="./img/index/stmp/conoha_stmp01.png" alt="このはちゃんlineスタンプイラスト")
+          img.buruburu_start(src="./img/index/stmp/conoha_stmp01.png" alt="このはちゃんlineスタンプイラスト")
         .sd_image02
-          img(src="./img/index/stmp/conoha_stmp02.png" alt="このはちゃんlineスタンプイラスト")
+          img.enlargeme_start(src="./img/index/stmp/conoha_stmp02.png" alt="このはちゃんlineスタンプイラスト")
         .sd_image03
-          img(src="./img/index/stmp/conoha_stmp03.png" alt="このはちゃんlineスタンプイラスト")
+          img.conoha_down_start(src="./img/index/stmp/conoha_stmp03.png" alt="このはちゃんlineスタンプイラスト")
         .sd_image04
-          img(src="./img/index/stmp/conoha_stmp04.png" alt="このはちゃんlineスタンプイラスト")
+          img.yurayura_start(src="./img/index/stmp/conoha_stmp04.png" alt="このはちゃんlineスタンプイラスト")
         .sd_image05
-          img(src="./img/index/stmp/conoha_stmp05.png" alt="このはちゃんlineスタンプイラスト")
+          img.conoha_up_start(src="./img/index/stmp/conoha_stmp05.png" alt="このはちゃんlineスタンプイラスト")
 
   section#diagnosis
     .title

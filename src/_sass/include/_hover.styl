@@ -77,7 +77,8 @@ writer    Daichi Seki, Miwa Shuntaro
 .back_window
   position relative
   z-index 2
-  overflow hidden
+  perspective 300px
+  transform-style preserve-3d
   &::before,&::after
     content ''
     position absolute
@@ -86,21 +87,22 @@ writer    Daichi Seki, Miwa Shuntaro
     overflow hidden
     transition all .5s
   &::after
-    top -100%
-    left -100%
-    width 100%
-    height 100%
-  &:hover::after
     top 0
     left 0
-    background #333 url(../img/index/external.png) no-repeat
-    background-position 96% center
-    background-size 10% auto
+    width 100%
+    height 100%
+    transform-origin center bottom
+    transform rotateX(0)
+    background plan_color
+  &:hover::after
+    transform rotateX(-180deg)
+    background plan_color
 
 .back_window2
   position relative
   z-index 2
-  overflow hidden
+  perspective 300px
+  transform-style preserve-3d
   &::before,&::after
     content ''
     position absolute
@@ -111,17 +113,16 @@ writer    Daichi Seki, Miwa Shuntaro
   &:hover
     color #000 !important
   &::after
-    top -100%
-    left -100%
-    width 100%
-    height 100%
-  &:hover::after
     top 0
     left 0
-    background #ddd url(../img/index/external.png) no-repeat
-    background-position 96% center
-    background-size 10% auto
-
+    width 100%
+    height 100%
+    transform-origin center bottom
+    transform rotateX(0)
+    background #021969
+  &:hover::after
+    transform rotateX(-180deg)
+    background #021969
 //一番下の吹き出し
 .bound_balloon
   transition all .5s cubic-bezier(0.650, -0.600, 0.295, 1.650)
