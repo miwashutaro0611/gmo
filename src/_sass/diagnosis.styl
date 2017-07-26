@@ -110,6 +110,26 @@ body
       margin auto
       width 100%
       height auto
+  .checked_count
+    position fixed
+    z-index 100
+    right 3vh
+    bottom 3vh
+    width 30vh
+    height 30vh
+    border-radius 50%
+    text-align center
+    background-color #ffbf7f
+    color #fff
+    animation fadeIn .2s ease
+    .num
+      position absolute
+      z-index 101
+      top 0
+      right 0
+      bottom 0
+      left 0
+      margin auto
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
 @media screen and (max-width: 999px)
@@ -118,7 +138,11 @@ body
     .global_header
       position absolute
       width 1000px
+    .diagnosis_wrap
+      width 1000px
 // ここからspの場合
+/*
 @media screen and (max-width: 767px)
   body
     display none
+*/

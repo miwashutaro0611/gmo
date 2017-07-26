@@ -103,7 +103,7 @@ function checkedBoxCountDisp(count){
     if($('.checked_count').length !== 0){
       $('.checked_count').text(8-count);
     }else{
-      var str = '<div class="checked_count">'+(8-count)+'</div>';
+      var str = '<div class="checked_count"><span class="num">あと残り<br>'+(8-count)+'問！</span></div>';
       $('.diagnosis_wrap').append(str);
     }
   }
