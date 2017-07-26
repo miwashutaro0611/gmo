@@ -64,7 +64,7 @@ $(function(){
     var count = checkedBoxCount();
     if(count == 8){
       // セッションストレージへ格納
-      var setFlag = setSessionStorage();
+      var sessionArr = setSessionStorage();
       //window.location.href = '/result.html';
     }else{
       alert("全て選ばれていませんご！！！！")
@@ -112,8 +112,11 @@ function checkedBoxCount(){
 /* -------------------------------------------------- */
 // 未チェックの設問数を画面右下に表示
 function checkedBoxCountDisp(count){
-  if(count === 0){
-    return false;
+  if(count == 8){
+    //return false;
+    $('.checked_count').empty().html('<span class="result_go">診断結果へ</span>');
+    $('.checked_count').addClass('animated');
+
   }else{
     if($('.checked_count').length !== 0){
       $('.checked_count .num').text(8-count);
@@ -180,7 +183,12 @@ function setSessionStorage(){
   var loopCount = 1;
   $("div.diagnosis_wrap__item").each(function(){
     var value = $(this).find('.question__choice input[name="'+loopCount+'th_check"]:checked').val();
-    console.log(loopCount+"は"+value);
+    sessionArr.push(value);
     loopCount++;
   });
+
+  var str = sessionArr.toString();
+  sessionStorage.setItem('choice_info', str);
+
+  return true;
 }

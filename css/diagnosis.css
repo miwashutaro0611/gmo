@@ -1104,6 +1104,9 @@ body {
   background-color: #ffa200;
   cursor: pointer;
 }
+.diagnosis_wrap .checked_count.animated {
+  animation: hurueru 0.5s infinite ease;
+}
 .diagnosis_wrap .checked_count .num {
   position: absolute;
   z-index: 101;
@@ -1131,6 +1134,10 @@ body {
   position: absolute;
   z-index: 101;
   font-size: 60px;
+  font-weight: bold;
+}
+.diagnosis_wrap .checked_count .result_go {
+  font-size: 56px;
   font-weight: bold;
 }
 /*****-----------------------------------*****/

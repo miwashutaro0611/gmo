@@ -127,6 +127,9 @@ body
     &:hover
       background-color main_color
       cursor pointer
+    // 8問選択時のアニメーション
+    &.animated
+      animation hurueru .5s infinite ease
     .num
       position absolute
       z-index 101
@@ -153,6 +156,9 @@ body
         z-index 101
         font-size 60px
         font-weight bold
+    .result_go
+      font-size 56px
+      font-weight bold
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
 @media screen and (max-width: 999px)
