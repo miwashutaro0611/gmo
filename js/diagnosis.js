@@ -1,5 +1,5 @@
 /* ----------------------------------------
-fileName : main.js
+fileName : diagnosis.js
 writer   : Daichi Seki, Miwa Shuntaro
 
 -- 質問用(diagnosis.html)js
@@ -65,7 +65,7 @@ $(function(){
     if(count == 8){
       // セッションストレージへ格納
       var sessionArr = setSessionStorage();
-      //window.location.href = '/result.html';
+      window.location.href = '/result.html';
     }else{
       alert("全て選ばれていませんご！！！！")
     }
@@ -191,4 +191,15 @@ function setSessionStorage(){
   sessionStorage.setItem('choice_info', str);
 
   return true;
+}
+
+
+/* -------------------------------------------------- */
+// result.html
+// ローカルストレージからデータを取得し配列へ
+function getSessionStorage(){
+  var sessionArr = new Array();
+  sessionArr = sessionStorage.getItem('choice_info').split(',');
+
+  return sessionArr;
 }

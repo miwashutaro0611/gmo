@@ -3,13 +3,18 @@ block vars
   include include/_meta
   - var key = "result"
   - var page = pages[key]
-  block css
-    link(rel="stylesheet", href='./css/style.css')
-    link(rel="stylesheet", href='./css/result.css')
-  block js
-    script(src="./js/main.js")
+block css
+  link(rel="stylesheet", href='./css/style.css')
+  link(rel="stylesheet", href='./css/result.css')
+block js
+  script(src="./js/result.js")
 block content
-  include include/_header
+  header.global_header
+    h1.global_header__h1
+      a.global_header__h1--link(href="./")
+        | CONOHA
+        br
+        | SINDAN ROOM
   section
     p agooooo2
   include include/_footer
