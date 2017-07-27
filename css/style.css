@@ -972,6 +972,7 @@ body {
 .global_header {
   position: fixed;
   z-index: 999;
+  min-width: 1000px;
   width: 100%;
   background-color: #fff;
 }
@@ -992,8 +993,7 @@ body {
   color: #fff;
 }
 .global_header__nav {
-  margin: 10px 0;
-  padding: 0 3%;
+  margin: 10px 30px;
 }
 .global_header__nav .question_list {
   display: flex;
@@ -1075,15 +1075,15 @@ body {
   animation: fadeIn 1s ease;
 }
 /*****-----------------------------------*****/
-@media screen and (max-width: 999px) {
-  body {
-    width: 1000px;
-  }
-  .header_wrapp .diagnosis_start {
-    width: 300px;
-    height: 300px;
-  }
-}
+/*
+@media screen and (max-width: 999px)
+  body
+    width 1000px
+  .header_wrapp
+    .diagnosis_start
+      width 300px
+      height 300px
+*/
 /*
 @media screen and (max-width: 767px)
   body

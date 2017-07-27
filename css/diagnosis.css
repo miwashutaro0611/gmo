@@ -968,6 +968,7 @@ body {
 }
 /*****-----------------------------------*****/
 .diagnosis_wrap {
+  min-width: 1000px;
   width: 100%;
   height: 100%;
   padding-top: 210px;
@@ -978,6 +979,7 @@ body {
 }
 .diagnosis_wrap__item .question {
   width: 100%;
+  min-height: 631px;
   padding: 5% 8%;
   box-sizing: border-box;
 }
@@ -985,8 +987,8 @@ body {
   width: calc(100% - 25%);
   font-size: 2.7vw;
   background-color: transparent;
-  height: 12vh;
-  line-height: 12vh;
+  height: 100px;
+  line-height: 100px;
 }
 .diagnosis_wrap__item .question__query .question_number {
   padding-right: 20px;
@@ -1003,6 +1005,7 @@ body {
 }
 .diagnosis_wrap__item .question__choice {
   position: relative;
+  min-height: 400px;
 /*
         .overlay_border
           position absolute
@@ -1019,7 +1022,9 @@ body {
 }
 .diagnosis_wrap__item .question__choice .individual_choice {
   display: flex;
+  min-width: 547px;
   width: calc(100% - 35%);
+  min-height: 90px;
   margin-top: 5vh;
   font-size: 3.5vw;
   font-weight: bold;
@@ -1028,8 +1033,8 @@ body {
   cursor: pointer;
   transition: 0.2s;
   box-shadow: 3px 3px 3px #ccc;
-  height: 10vh;
-  line-height: 10vh;
+  height: 109px;
+  line-height: 109px;
 }
 .diagnosis_wrap__item .question__choice .individual_choice:hover {
   box-shadow: 6px 6px 3px #aaa;
@@ -1053,16 +1058,18 @@ body {
 .diagnosis_wrap__item .question__choice .individual_choice .lever_word {
   flex: 1;
   position: relative;
-  padding-left: 10vh;
+  padding-left: 100px;
   box-sizing: border-box;
 }
 .diagnosis_wrap__item .question__choice .individual_choice .lever_word::before {
   content: "";
   display: block;
   position: absolute;
-  top: 2vh;
-  left: 2.4vh;
+  top: 21.5px;
+  left: 21.5px;
+  min-width: 54.5px;
   width: 5vh;
+  min-height: 54.5px;
   height: 5vh;
   border: 6px solid #ffbf7f;
   border-radius: 4px;
@@ -1071,6 +1078,7 @@ body {
   position: fixed;
   top: 260px;
   right: 5%;
+  min-width: 300px;
   width: 30%;
   height: auto;
 }
@@ -1097,8 +1105,8 @@ body {
   background-color: #ffbf7f;
   color: #fff;
   animation: fadeIn 0.2s ease;
-  height: 30vh;
-  line-height: 30vh;
+  height: 30px;
+  line-height: 30px;
 }
 .diagnosis_wrap .checked_count:hover {
   background-color: #ffa200;
@@ -1110,7 +1118,7 @@ body {
 .diagnosis_wrap .checked_count .num {
   position: absolute;
   z-index: 101;
-  top: 2vh;
+  top: 170px;
   right: 0;
   bottom: 0;
   left: -10vh;
@@ -1137,22 +1145,25 @@ body {
   font-weight: bold;
 }
 .diagnosis_wrap .checked_count .result_go {
+  display: block;
+  position: absolute;
+  top: 132px;
+  right: 0;
+  left: 0;
+  text-align: center;
   font-size: 56px;
   font-weight: bold;
 }
 /*****-----------------------------------*****/
-@media screen and (max-width: 999px) {
-  body {
-    width: 1000px;
-  }
-  body .global_header {
-    position: absolute;
-    width: 1000px;
-  }
-  body .diagnosis_wrap {
-    width: 1000px;
-  }
-}
+/*
+@media screen and (max-width: 999px)
+  body
+    width 1000px
+    .global_header
+      width 1000px
+    .diagnosis_wrap
+      width 1000px
+*/
 /*
 @media screen and (max-width: 767px)
   body

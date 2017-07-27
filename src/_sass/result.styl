@@ -4,16 +4,103 @@ writer   : Daichi Seki, Miwa Shuntaro
 
 -- 結果ページstylの記入
 ---------------------------------------- */
+@import "include/_import.styl";
 
 body
   font-size 14px
+  font-family "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif"
+
 
 /*****-----------------------------------*****/
-
-
-
+.global_header
+  position static
+  min-width 1000px
+  width 100%
+  background-color #fff
+  &__h1
+    height 120px
+    padding 10px 0
+    box-sizing border-box
+    background main_color
+    &--link
+      display block
+      line-height 50px
+      text-align center
+      font-size 2.2em
+      font-weight bold
+      font-family "toroman"
+      letter-spacing .2em
+      color #fff
+.result_wrap
+  min-width 1000px
+  width 100%
+  min-height: 900px
+  height calc(100vh - 120px)
+  padding-top 80px
+  box-sizing border-box
+  background-image url("../img/index/back_pattern.png")
+  .content
+    width 1000px
+    margin 0 auto
+    &__h2
+      display block
+      width 340px
+      margin 0 auto 50px auto
+      text-align center
+      font-size 80px
+      font-weight bold
+      color #444
+      text-shadow: 3px 3px 3px #ccc;
+      background: linear-gradient(transparent 65%, #ffbf7f 35%)
+    .plan
+      position: relative;
+      width 800px
+      height auto
+      margin 0 auto
+      padding 0 27px
+      border 3px solid #ffbf7f
+      box-sizing border-box
+      background-color #fff
+      &__item
+        height 100px
+        border-bottom 2px solid #ffbf7f
+        box-sizing border-box
+        line-height 100px
+        color #555
+        text-shadow: 2px 2px 2px #ccc;
+        &::after
+          content ''
+          clear both
+          display block
+        &:last-child
+          border none
+        &__tag
+          float left
+          width 400px
+          padding 0 0 0 30px
+          box-sizing border-box
+          font-size 30px
+        &__main
+          float left
+          width auto
+          font-size 36px
+          font-weight bold
+    .plan_link
+      display block
+      width 300px
+      height 80px
+      margin 50px auto 0 auto
+      line-height 80px
+      text-align center
+      font-size 30px
+      background-color main_color
+      color #fff
+      transition .2s
+      &:hover
+        background-color #ffbf7f
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
+/*
 @media screen and (max-width: 999px)
   body
     width 1000px
@@ -25,3 +112,4 @@ body
 @media screen and (max-width: 767px)
   body
     display none
+*/

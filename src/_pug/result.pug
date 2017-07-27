@@ -15,6 +15,23 @@ block content
         | CONOHA
         br
         | SINDAN ROOM
-  section
-    p agooooo2
-  include include/_footer
+  section.result_wrap
+    .content
+      h2.content__h2 診断結果
+      .plan
+        .plan__item
+          p.plan__item__tag メモリー
+          p.plan__item__main.plan__item__main--01
+        .plan__item
+          p.plan__item__tag CPU
+          p.plan__item__main.plan__item__main--02
+        .plan__item
+          p.plan__item__tag SSD
+          p.plan__item__main.plan__item__main--03
+        .plan__item
+          p.plan__item__tag 月額料金
+          p.plan__item__main.plan__item__main--04
+        .plan__item
+          p.plan__item__tag 1時間あたりの料金
+          p.plan__item__main.plan__item__main--05
+      a.plan_link(href="https://www.conoha.jp/pricing/?btn_id=header_pricing") プラン一覧を確認

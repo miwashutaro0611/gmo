@@ -58,32 +58,29 @@ block content
       .question
         .question__query
           span.question_number Q4
-          span.question_text 容量はどのくらいにしますか？
+          span.question_text 自動バックアップをConohaで行いますか？
         .question__choice
           label.individual_choice
             input.checkbox(type="checkbox" name="4th_check" value="1")
-            span.lever_word お手軽
+            span.lever_word 行う
           label.individual_choice
             input.checkbox(type="checkbox" name="4th_check" value="2")
-            span.lever_word おすすめ
-          label.individual_choice
-            input.checkbox(type="checkbox" name="4th_check" value="3")
-            span.lever_word 大容量
+            span.lever_word 行わない
     #5th.diagnosis_wrap__item
       .question
         .question__query
           span.question_number Q5
-          span.question_text データベースやメールは使いますか？
+          span.question_text 容量はどのくらいにしますか？
         .question__choice
           label.individual_choice
             input.checkbox(type="checkbox" name="5th_check" value="1")
-            span.lever_word 使う
+            span.lever_word お手軽
           label.individual_choice
             input.checkbox(type="checkbox" name="5th_check" value="2")
-            span.lever_word 使わない
+            span.lever_word おすすめ
           label.individual_choice
             input.checkbox(type="checkbox" name="5th_check" value="3")
-            span.lever_word 決めていない
+            span.lever_word 大容量
     #6th.diagnosis_wrap__item
       .question
         .question__query
@@ -103,14 +100,17 @@ block content
       .question
         .question__query
           span.question_number Q7
-          span.question_text 自動バックアップをConohaで行いますか？
+          span.question_text データベースやメールは使いますか？
         .question__choice
           label.individual_choice
             input.checkbox(type="checkbox" name="7th_check" value="1")
-            span.lever_word 行う
+            span.lever_word 使う
           label.individual_choice
             input.checkbox(type="checkbox" name="7th_check" value="2")
-            span.lever_word 行わない
+            span.lever_word 使わない
+          label.individual_choice
+            input.checkbox(type="checkbox" name="7th_check" value="3")
+            span.lever_word 決めていない
     #8th.diagnosis_wrap__item
       .question
         .question__query

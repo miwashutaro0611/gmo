@@ -11,6 +11,7 @@ body
 
 /*****-----------------------------------*****/
 .diagnosis_wrap
+  min-width 1000px
   width 100%
   height 100%
   padding-top 210px
@@ -19,13 +20,14 @@ body
     height calc(100vh - 200px)
     .question
       width 100%
+      min-height 631px
       padding 5% 8%
       box-sizing border-box
       &__query
         width calc(100% - 25%)
         font-size 2.7vw
         background-color transparent
-        middle-line(12vh)
+        middle-line(100)
         .question_number
           padding-right 20px
           box-sizing border-box
@@ -39,9 +41,12 @@ body
           background: linear-gradient(transparent 65%, #ffbf7f 35%)
       &__choice
         position relative
+        min-height 400px
         .individual_choice
           display flex
+          min-width 547px
           width calc(100% - 35%)
+          min-height 90px
           margin-top 5vh
           font-size 3.5vw
           font-weight bold
@@ -50,7 +55,7 @@ body
           cursor pointer
           transition .2s
           box-shadow: 3px 3px 3px #ccc;
-          middle-line(10vh)
+          middle-line(109)
           &:hover
             box-shadow: 6px 6px 3px #aaa;
           .checkbox
@@ -70,15 +75,17 @@ body
           .lever_word
             flex 1
             position relative
-            padding-left 10vh
+            padding-left 100px
             box-sizing border-box
             &::before
               content ""
               display block
               position absolute
-              top 2vh
-              left 2.4vh
+              top 21.5px
+              left 21.5px
+              min-width 54.5px
               width 5vh
+              min-height 54.5px
               height 5vh
               border 6px solid #ffbf7f
               border-radius 4px
@@ -99,6 +106,7 @@ body
     position fixed
     top 260px
     right 5%
+    min-width 300px
     width 30%
     height auto
     &__img
@@ -133,7 +141,7 @@ body
     .num
       position absolute
       z-index 101
-      top 2vh
+      top 170px
       right 0
       bottom 0
       left -10vh
@@ -157,18 +165,25 @@ body
         font-size 60px
         font-weight bold
     .result_go
+      display block
+      position absolute
+      top 132px
+      right 0
+      left 0
+      text-align center
       font-size 56px
       font-weight bold
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
+/*
 @media screen and (max-width: 999px)
   body
     width 1000px
     .global_header
-      position absolute
       width 1000px
     .diagnosis_wrap
       width 1000px
+*/
 // ここからspの場合
 /*
 @media screen and (max-width: 767px)

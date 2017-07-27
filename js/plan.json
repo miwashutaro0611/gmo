@@ -1,0 +1,140 @@
+
+{
+  "plan" : {
+    "1" : {
+      "memory" : "512MB",
+      "cpu" : "CPU1コア",
+      "ssd" : "SSD20GB",
+      "month1" : "",
+      "month2" : "630",
+      "hour1" : "",
+      "hour2" : "1.0"
+    },
+    "2" : {
+      "memory" : "1GB",
+      "cpu" : "CPU2コア",
+      "ssd" : "SSD50GB",
+      "month1" : "900",
+      "month2" : "765",
+      "hour1" : "1.3",
+      "hour2" : "1.1"
+    },
+    "3" : {
+      "memory" : "2GB",
+      "cpu" : "CPU3コア",
+      "ssd" : "SSD50GB",
+      "month1" : "1,750",
+      "month2" : "1,487",
+      "hour1" : "2.5",
+      "hour2" : "2.1"
+    },
+    "4" : {
+      "memory" : "4GB",
+      "cpu" : "CPU4コア",
+      "ssd" : "SSD50GB",
+      "month1" : "3,420",
+      "month2" : "2,907",
+      "hour1" : "4.8",
+      "hour2" : "4.1"
+    },
+    "5" : {
+      "memory" : "8GB",
+      "cpu" : "CPU6コア",
+      "ssd" : "SSD50GB",
+      "month1" : "6,670",
+      "month2" : "5,669",
+      "hour1" : "9.3",
+      "hour2" : "7.9"
+    },
+    "6" : {
+      "memory" : "16GB",
+      "cpu" : "CPU8コア",
+      "ssd" : "SSD50GB",
+      "month1" : "13,010",
+      "month2" : "11,058",
+      "hour1" : "18.1",
+      "hour2" : "15.4"
+    },
+    "7" : {
+      "memory" : "32GB",
+      "cpu" : "CPU12コア",
+      "ssd" : "SSD50GB",
+      "month1" : "25,370",
+      "month2" : "21,564",
+      "hour1" : "35.3",
+      "hour2" : "30.0"
+    },
+    "8" : {
+      "memory" : "64GB",
+      "cpu" : "CPU24コア",
+      "ssd" : "SSD50GB",
+      "month1" : "49,480",
+      "month2" : "42,058",
+      "hour1" : "68.8",
+      "hour2" : "58.5"
+    },
+    "9" : {
+      "memory" : "1GB",
+      "cpu" : "CPU2コア",
+      "ssd" : "SSD50GB",
+      "month1" : "1,170",
+      "month2" : "995",
+      "hour1" : "1.7",
+      "hour2" : "1.4"
+    },
+    "10" : {
+      "memory" : "2GB",
+      "cpu" : "CPU3コア",
+      "ssd" : "SSD50GB",
+      "month1" : "2,270",
+      "month2" : "1,929",
+      "hour1" : "3.2",
+      "hour2" : "2.7"
+    },
+    "11" : {
+      "memory" : "4GB",
+      "cpu" : "CPU4コア",
+      "ssd" : "SSD50GB",
+      "month1" : "4,440",
+      "month2" : "3,774",
+      "hour1" : "6.2",
+      "hour2" : "5.3"
+    },
+    "12" : {
+      "memory" : "8GB",
+      "cpu" : "CPU6コア",
+      "ssd" : "SSD50GB",
+      "month1" : "8,670",
+      "month2" : "7,369",
+      "hour1" : "12.1",
+      "hour2" : "10.3"
+    },
+    "13" : {
+      "memory" : "16GB",
+      "cpu" : "CPU8コア",
+      "ssd" : "SSD50GB",
+      "month1" : "16,910",
+      "month2" : "14,373",
+      "hour1" : "23.5",
+      "hour2" : "20.0"
+    },
+    "14" : {
+      "memory" : "32GB",
+      "cpu" : "CPU12コア",
+      "ssd" : "SSD50GB",
+      "month1" : "32,980",
+      "month2" : "28,033",
+      "hour1" : "45.9",
+      "hour2" : "39.0"
+    },
+    "15" : {
+      "memory" : "64GB",
+      "cpu" : "CPU24コア",
+      "ssd" : "SSD50GB",
+      "month1" : "64,320",
+      "month2" : "54,672",
+      "hour1" : "89.4",
+      "hour2" : "76.0"
+    }
+  }
+}
