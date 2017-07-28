@@ -17,6 +17,7 @@ body
   padding-top 210px
   background-image url("../img/index/back_pattern.png")
   &__item
+    min-height 700px
     height calc(100vh - 200px)
     .question
       width 100%
@@ -62,12 +63,12 @@ body
             &:checked + .lever_word::after
               content ""
               position absolute
-              top 2.2vh
-              left 3.5vh
-              width 4.8vh
-              height 2.3vh
-              border-left 0.8vh solid #ffbf7f
-              border-bottom 1vh solid #ffbf7f
+              top 20px
+              left 33px
+              width 50px
+              height 25px
+              border-left 8px solid #ffbf7f
+              border-bottom 10px solid #ffbf7f
               -webkit-transform rotate(-45deg)
               -ms-transform rotate(-45deg)
               transform rotate(-45deg)
@@ -82,10 +83,8 @@ body
               position absolute
               top 21.5px
               left 21.5px
-              min-width 54.5px
-              width 5vh
-              min-height 54.5px
-              height 5vh
+              width  50px
+              height  50px
               border 6px solid #ffbf7f
               border-radius 4px
         /*
@@ -129,6 +128,7 @@ body
     text-align center
     background-color #ffbf7f
     color #fff
+    cursor pointer
     animation fadeIn .2s ease
     middle-line(30vh)
     &:hover
@@ -150,7 +150,7 @@ body
       &::before
         content 'あと残り'
         position absolute
-        top -9vh
+        top -100px
         right 0
         bottom 0
         left 10vh
@@ -183,8 +183,10 @@ body
     width 100%
     padding-top 150px
     &__item
+      min-height 700px
       height auto
       .question
+        min-height 500px
         &__query
           width 100%
           font-size 3.5vw
@@ -247,9 +249,6 @@ body
       &:hover
         background-color main_color
         cursor pointer
-      // 8問選択時のアニメーション
-      &.animated
-        animation hurueru .5s infinite ease
       .num
         position absolute
         z-index 101
