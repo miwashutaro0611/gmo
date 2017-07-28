@@ -1072,14 +1072,4 @@ body {
 /*****-----------------------------------*****/
 /*
 @media screen and (max-width: 999px)
-  body
-    width 1000px
-  .header_wrapp
-    .diagnosis_start
-      width 300px
-      height 300px
-// ここからspの場合
-@media screen and (max-width: 767px)
-  body
-    display none
 */

@@ -1024,7 +1024,6 @@ body {
   display: flex;
   min-width: 547px;
   width: calc(100% - 35%);
-  min-height: 90px;
   margin-top: 5vh;
   font-size: 3.5vw;
   font-weight: bold;
@@ -1112,9 +1111,6 @@ body {
   background-color: #ffa200;
   cursor: pointer;
 }
-.diagnosis_wrap .checked_count.animated {
-  animation: hurueru 0.5s infinite ease;
-}
 .diagnosis_wrap .checked_count .num {
   position: absolute;
   z-index: 101;
@@ -1155,17 +1151,130 @@ body {
   font-weight: bold;
 }
 /*****-----------------------------------*****/
-/*
-@media screen and (max-width: 999px)
-  body
-    width 1000px
-    .global_header
-      width 1000px
-    .diagnosis_wrap
-      width 1000px
-*/
-/*
-@media screen and (max-width: 767px)
-  body
-    display none
-*/
+@media (max-width: 768px) {
+  .global_header__nav {
+    display: none;
+  }
+  .diagnosis_wrap {
+    min-width: auto;
+    width: 100%;
+    padding-top: 150px;
+  }
+  .diagnosis_wrap__item {
+    height: auto;
+  }
+  .diagnosis_wrap__item .question__query {
+    width: 100%;
+    font-size: 3.5vw;
+  }
+  .diagnosis_wrap__item .question__query .question_number {
+    font-size: 5vw;
+  }
+  .diagnosis_wrap__item .question__choice .individual_choice {
+    min-width: auto;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 5.5vw;
+  }
+  .diagnosis_wrap__item .question__choice .individual_choice .checkbox {
+    display: none;
+  }
+  .diagnosis_wrap__item .question__choice .individual_choice .checkbox:checked + .lever_word::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 23px;
+    width: 30px;
+    height: 15px;
+    border-left: 6px solid #ffbf7f;
+    border-bottom: 8px solid #ffbf7f;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .diagnosis_wrap__item .question__choice .individual_choice .lever_word {
+    flex: 1;
+    position: relative;
+    padding-left: 60px;
+    box-sizing: border-box;
+  }
+  .diagnosis_wrap__item .question__choice .individual_choice .lever_word::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    min-width: auto;
+    width: 30px;
+    min-height: auto;
+    height: 30px;
+    border: 5px solid #ffbf7f;
+    border-radius: 4px;
+  }
+  .diagnosis_wrap .fixed_conoha {
+    display: none;
+  }
+  .diagnosis_wrap .checked_count {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: auto;
+    height: 100px;
+    min-height: auto;
+    border: none;
+    border-radius: 0%;
+    line-height: 100px;
+    color: #fff;
+    animation: fadeIn 0.2s ease;
+  }
+  .diagnosis_wrap .checked_count:hover {
+    background-color: #ffa200;
+    cursor: pointer;
+  }
+  .diagnosis_wrap .checked_count.animated {
+    animation: hurueru 0.5s infinite ease;
+  }
+  .diagnosis_wrap .checked_count .num {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-size: 10vw;
+    font-weight: bold;
+  }
+  .diagnosis_wrap .checked_count .num::before {
+    content: 'あと残り';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -25vw;
+    z-index: 101;
+    font-size: 4vw;
+    font-weight: normal;
+  }
+  .diagnosis_wrap .checked_count .num::after {
+    content: '問です！';
+    position: absolute;
+    right: 29vw;
+    z-index: 101;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  .diagnosis_wrap .checked_count .result_go {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 10vw;
+    font-weight: bold;
+  }
+}

@@ -1074,18 +1074,42 @@ body {
   opacity: 1;
   animation: fadeIn 1s ease;
 }
+.global_header .scroll_attention {
+  display: none;
+}
 /*****-----------------------------------*****/
-/*
-@media screen and (max-width: 999px)
-  body
-    width 1000px
-  .header_wrapp
-    .diagnosis_start
-      width 300px
-      height 300px
-*/
-/*
-@media screen and (max-width: 767px)
-  body
-    display none
-*/
+@media (max-width: 768px) {
+  .global_header {
+    min-width: auto;
+    background-color: rgba(255,255,255,0.5);
+  }
+  .global_header__h1 {
+    height: 90px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #ffa200;
+  }
+  .global_header__h1--link {
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: "toroman";
+    letter-spacing: 0.2em;
+    color: #fff;
+  }
+  .global_header__nav {
+    display: none;
+  }
+  .global_header .scroll_attention {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: #ffa200;
+    animation: text-fade 1.6s infinite ease;
+  }
+}

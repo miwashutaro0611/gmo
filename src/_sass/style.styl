@@ -102,23 +102,37 @@ body
             display block
             opacity 1
             animation fadeIn 1s ease
-
-
+  .scroll_attention
+    display none
 
 /*****-----------------------------------*****/
-// 1000~768 1000px固定幅
-/*
-@media screen and (max-width: 999px)
-  body
-    width 1000px
-  .header_wrapp
-    .diagnosis_start
-      width 300px
-      height 300px
-*/
-// ここからspの場合
-/*
-@media screen and (max-width: 767px)
-  body
-    display none
-*/
+// 1000~
+@media (max-width: 768px)
+  .global_header
+    min-width auto
+    background-color rgba(#fff,0.5)
+    &__h1
+      height 90px
+      padding 10px 0
+      box-sizing border-box
+      background main_color
+      &--link
+        display block
+        line-height 35px
+        text-align center
+        font-size 4vw
+        font-weight bold
+        font-family "toroman"
+        letter-spacing .2em
+        color #fff
+    &__nav
+      display none
+    .scroll_attention
+      display block
+      height 80px
+      line-height 80px
+      text-align center
+      font-size 4.5vw
+      font-weight bold
+      color main_color
+      animation text-fade 1.6s infinite ease
