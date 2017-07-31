@@ -67,7 +67,7 @@ $(function(){
       var sessionArr = setSessionStorage();
       window.location.href = '/result.html';
     }else{
-      alert("全て選ばれていませんご！！！！")
+      alert("全ての設問を回答してください！")
     }
   });
 });
