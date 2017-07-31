@@ -34,8 +34,8 @@ body
 .result_wrap
   min-width 1000px
   width 100%
-  min-height 900px
-  height calc(100vh - 120px)
+  min-height 1253px
+  height auto
   padding-top 80px
   box-sizing border-box
   background-image url("../img/index/back_pattern.png")
@@ -98,6 +98,59 @@ body
       transition .2s
       &:hover
         background-color #ffbf7f
+    .description
+      position relative
+      top 60px
+      width 100%
+      height 300px
+      padding 0 30px
+      box-sizing border-box
+      &__text
+        position absolute
+        z-index 999
+        width 650px
+        .balloon
+          position relative
+          display inline-block
+          padding 20px 30px
+          width 100%
+          line-height 48px
+          border solid 3px #555
+          border-radius 3vw
+          color #555
+          font-size 24px
+          background #FFF
+          box-sizing border-box
+          &::before
+            content ""
+            position absolute
+            right -24px
+            top 50%
+            margin-top -15px
+            border 12px solid transparent
+            border-left 12px solid #FFF
+            z-index 2
+          &::after
+            content ""
+            position absolute
+            right -30px
+            top 50%
+            margin-top -17px
+            border 14px solid transparent
+            border-left 14px solid #555
+            z-index 1
+          & > p
+            margin 0
+            padding 0
+            font-family "851kktt"
+      &__image
+        position absolute
+        right 0
+        width 350px
+        text-align center
+        & > img
+          width 80%
+          height auto
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
 @media (max-width: 768px)
@@ -176,6 +229,8 @@ body
         transition .2s
         &:hover
           background-color #ffbf7f
+      .description
+        display none
 @media (max-width: 480px)
   .result_wrap
     .content
