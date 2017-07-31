@@ -1070,6 +1070,111 @@ body {
   background-color: #ffbf7f;
 }
 /*****-----------------------------------*****/
-/*
-@media screen and (max-width: 999px)
-*/
+@media (max-width: 768px) {
+  .global_header {
+    min-width: auto;
+    background-color: rgba(255,255,255,0.5);
+  }
+  .global_header__h1 {
+    height: 90px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #ffa200;
+  }
+  .global_header__h1--link {
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: "toroman";
+    letter-spacing: 0.2em;
+    color: #fff;
+  }
+  .result_wrap {
+    min-width: auto;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .result_wrap .content {
+    width: 100%;
+    text-align: center;
+  }
+  .result_wrap .content__h2 {
+    display: inline;
+    width: auto;
+    margin: none;
+    font-size: 40px;
+  }
+  .result_wrap .content .plan {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    padding: 0 20px;
+    text-align: left;
+  }
+  .result_wrap .content .plan__item {
+    height: 80px;
+    border-bottom: 2px solid #ffbf7f;
+    box-sizing: border-box;
+    line-height: 80px;
+    color: #555;
+    text-shadow: 2px 2px 2px #ccc;
+  }
+  .result_wrap .content .plan__item::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .result_wrap .content .plan__item:last-child {
+    border: none;
+  }
+  .result_wrap .content .plan__item__tag {
+    float: left;
+    max-width: 280px;
+    width: 100%;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .result_wrap .content .plan__item__main {
+    float: left;
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .result_wrap .content .plan_link {
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 30px auto 0 auto;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #ffa200;
+    color: #fff;
+    transition: 0.2s;
+  }
+  .result_wrap .content .plan_link:hover {
+    background-color: #ffbf7f;
+  }
+}
+@media (max-width: 480px) {
+  .result_wrap .content__h2__item__tag,
+  .result_wrap .content .plan__item__tag {
+    float: left;
+    width: 140px;
+    padding: 0 0 0 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .result_wrap .content__h2__item__main,
+  .result_wrap .content .plan__item__main {
+    float: left;
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

@@ -34,7 +34,7 @@ body
 .result_wrap
   min-width 1000px
   width 100%
-  min-height: 900px
+  min-height 900px
   height calc(100vh - 120px)
   padding-top 80px
   box-sizing border-box
@@ -100,6 +100,96 @@ body
         background-color #ffbf7f
 /*****-----------------------------------*****/
 // 1000~768 1000px固定幅
-/*
-@media screen and (max-width: 999px)
-*/
+@media (max-width: 768px)
+  .global_header
+    min-width auto
+    background-color rgba(#fff,0.5)
+    &__h1
+      height 90px
+      padding 10px 0
+      box-sizing border-box
+      background main_color
+      &--link
+        display block
+        line-height 35px
+        text-align center
+        font-size 4vw
+        font-weight bold
+        font-family "toroman"
+        letter-spacing .2em
+        color #fff
+  .result_wrap
+    min-width auto
+    width 100%
+    min-height calc(100vh - 120px)
+    height auto
+    padding-top 40px
+    padding-bottom 50px
+    .content
+      width 100%
+      text-align center
+      &__h2
+        display inline
+        width auto
+        margin none
+        font-size 40px
+      .plan
+        width 90%
+        margin 20px auto 0 auto
+        padding 0 20px
+        text-align left
+        &__item
+          height 80px
+          border-bottom 2px solid #ffbf7f
+          box-sizing border-box
+          line-height 80px
+          color #555
+          text-shadow: 2px 2px 2px #ccc;
+          &::after
+            content ''
+            clear both
+            display block
+          &:last-child
+            border none
+          &__tag
+            float left
+            max-width 280px
+            width 100%
+            padding 0 0 0 10px
+            box-sizing border-box
+            font-size 16px
+          &__main
+            float left
+            width auto
+            font-size 20px
+            font-weight bold
+      .plan_link
+        display block
+        width 200px
+        height 60px
+        margin 30px auto 0 auto
+        line-height 60px
+        text-align center
+        font-size 18px
+        background-color main_color
+        color #fff
+        transition .2s
+        &:hover
+          background-color #ffbf7f
+@media (max-width: 480px)
+  .result_wrap
+    .content
+      &__h2
+      .plan
+        &__item
+          &__tag
+            float left
+            width 140px
+            padding 0 0 0 5px
+            box-sizing border-box
+            font-size 12px
+          &__main
+            float left
+            width auto
+            font-size 18px
+            font-weight bold
